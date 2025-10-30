@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import argoLogo from "@/assets/argo-logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,13 +11,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* О компании */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-hero">
-                <span className="text-xl font-bold text-primary-foreground">A72</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={argoLogo} 
+                alt="Argo72 логотип" 
+                className="h-12 w-12 object-contain rounded-lg"
+              />
               <div>
                 <div className="text-lg font-bold">Argo72</div>
-                <div className="text-xs text-muted-foreground">Сварочные работы</div>
+                <div className="text-xs text-muted-foreground">Сварка цветных металлов</div>
               </div>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
@@ -24,20 +27,20 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3">
               <a
-                href="https://wa.me/79123456789"
+                href="https://t.me/KaluginMaxim"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground hover:bg-primary-light transition-colors"
-                aria-label="WhatsApp"
+                aria-label="Telegram Максим Калугин"
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a
-                href="https://t.me/argo72tyumen"
+                href="https://t.me/makselyanov"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground hover:bg-primary-light transition-colors"
-                aria-label="Telegram"
+                aria-label="Telegram Максим Кузнецов"
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
@@ -120,21 +123,18 @@ const Footer = () => {
               <li className="flex items-start">
                 <Phone className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
                 <div>
-                  <a href="tel:+73452999888" className="text-muted-foreground hover:text-primary transition-colors">
-                    +7 (3452) 99-98-88
+                  <a href="tel:+79222675034" className="text-muted-foreground hover:text-primary transition-colors block">
+                    +7 922 267-50-34
+                  </a>
+                  <a href="tel:+79058248564" className="text-muted-foreground hover:text-primary transition-colors block">
+                    +7 905 824-85-64
                   </a>
                   <div className="text-xs text-muted-foreground">Круглосуточно</div>
                 </div>
               </li>
               <li className="flex items-start">
-                <Mail className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
-                <a href="mailto:info@argo72.ru" className="text-muted-foreground hover:text-primary transition-colors">
-                  info@argo72.ru
-                </a>
-              </li>
-              <li className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
-                <span className="text-muted-foreground">г. Тюмень, ул. Производственная, 12</span>
+                <span className="text-muted-foreground">г. Тюмень, ул. Камчатская, 1</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
@@ -152,7 +152,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
             <div className="mb-4 md:mb-0">
               <p>© {currentYear} ООО «АРГО». Все права защищены</p>
-              <p className="text-xs mt-1">ИНН: 7204000000 | ОГРН: 1147200000000</p>
+              <p className="text-xs mt-1">ИНН: 720321829472</p>
             </div>
             <div className="flex space-x-6">
               <Link to="/privacy" className="hover:text-primary transition-colors">

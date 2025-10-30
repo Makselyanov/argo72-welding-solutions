@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import argoLogo from "@/assets/argo-logo.jpg";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,13 +28,15 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Логотип */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-hero">
-              <span className="text-xl font-bold text-primary-foreground">A72</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src={argoLogo} 
+              alt="Argo72 логотип" 
+              className="h-12 w-12 object-contain rounded-lg"
+            />
             <div className="hidden sm:block">
               <div className="text-lg font-bold text-foreground">Argo72</div>
-              <div className="text-xs text-muted-foreground">Сварочные работы</div>
+              <div className="text-xs text-muted-foreground">Сварка цветных металлов</div>
             </div>
           </Link>
 
