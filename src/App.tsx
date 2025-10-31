@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Services from "./pages/Services";
 import Segments from "./pages/Segments";
 import Tariffs from "./pages/Tariffs";
+import Prices from "./pages/Prices";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/uslugi" element={<Services />} />
           <Route path="/dlya-kogo" element={<Segments />} />
           <Route path="/tarify" element={<Tariffs />} />
+          <Route path="/ceny" element={<Prices />} />
           <Route path="/o-kompanii" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

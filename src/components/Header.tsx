@@ -61,16 +61,16 @@ const Header = () => {
           {/* CTA кнопки */}
           <div className="hidden md:flex items-center space-x-2">
             <Button asChild variant="outline" size="sm">
-              <Link to="/order">
+              <a href="#callbackwidget">
                 <Phone className="mr-2 h-4 w-4" />
                 Заказать сварщика
-              </Link>
+              </a>
             </Button>
             <Button asChild size="sm" className="bg-secondary hover:bg-secondary-light">
-              <Link to="/urgent">
+              <a href="#callbackwidget">
                 <Clock className="mr-2 h-4 w-4" />
                 Срочно 24/7
-              </Link>
+              </a>
             </Button>
           </div>
 
@@ -111,16 +111,16 @@ const Header = () => {
             ))}
             <div className="pt-4 space-y-2">
               <Button asChild variant="outline" className="w-full" onClick={() => setMobileMenuOpen(false)}>
-                <Link to="/order">
+                <a href="#callbackwidget">
                   <Phone className="mr-2 h-4 w-4" />
                   Заказать сварщика
-                </Link>
+                </a>
               </Button>
               <Button asChild className="w-full bg-secondary hover:bg-secondary-light" onClick={() => setMobileMenuOpen(false)}>
-                <Link to="/urgent">
+                <a href="#callbackwidget">
                   <Clock className="mr-2 h-4 w-4" />
                   Срочно 24/7
-                </Link>
+                </a>
               </Button>
             </div>
           </nav>

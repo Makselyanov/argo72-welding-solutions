@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
+import { Send } from "lucide-react";
 import argoLogo from "@/assets/argo-logo.jpg";
 
 const Footer = () => {
@@ -30,19 +31,19 @@ const Footer = () => {
                 href="https://t.me/KaluginMaxim"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground hover:bg-primary-light transition-colors"
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0088cc] text-white hover:bg-[#0077b3] transition-colors"
                 aria-label="Telegram Максим Калугин"
               >
-                <MessageCircle className="h-5 w-5" />
+                <Send className="h-5 w-5" />
               </a>
               <a
                 href="https://t.me/makselyanov"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground hover:bg-primary-light transition-colors"
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0088cc] text-white hover:bg-[#0077b3] transition-colors"
                 aria-label="Telegram Максим Кузнецов"
               >
-                <MessageCircle className="h-5 w-5" />
+                <Send className="h-5 w-5" />
               </a>
             </div>
           </div>

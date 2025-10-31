@@ -105,9 +105,9 @@ const Tariffs = () => {
                         ))}
                       </ul>
                       <Button asChild className="w-full" variant={index === 1 ? "default" : "outline"}>
-                        <Link to="/order">
+                        <a href="#callbackwidget">
                           Выбрать пакет
-                        </Link>
+                        </a>
                       </Button>
                     </CardContent>
                   </Card>
@@ -149,9 +149,9 @@ const Tariffs = () => {
                         ))}
                       </ul>
                       <Button asChild className="w-full" variant={index === 1 ? "default" : "outline"}>
-                        <Link to="/order">
+                        <a href="#callbackwidget">
                           Выбрать пакет
-                        </Link>
+                        </a>
                       </Button>
                     </CardContent>
                   </Card>
@@ -167,9 +167,9 @@ const Tariffs = () => {
               Мы составим индивидуальное предложение под ваши задачи
             </p>
             <Button asChild size="lg" className="bg-secondary hover:bg-secondary-light">
-              <Link to="/kontakty">
+              <a href="#callbackwidget">
                 Получить консультацию
-              </Link>
+              </a>
             </Button>
           </section>
         </div>

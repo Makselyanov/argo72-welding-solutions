@@ -30,15 +30,15 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button asChild size="lg" className="bg-secondary hover:bg-secondary-light shadow-accent">
-                <Link to="/order">
+                <a href="#callbackwidget">
                   Заказать сварщика
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
-                <Link to="/ceny/kalkulyator">
+                <a href="#callbackwidget">
                   Рассчитать стоимость
-                </Link>
+                </a>
               </Button>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -201,14 +201,14 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="outline" className="bg-white text-secondary border-white hover:bg-white/90">
-              <a href="tel:+73452999888">
+              <a href="tel:+79222675034">
                 Позвонить сейчас
               </a>
             </Button>
             <Button asChild size="lg" className="bg-white/20 border border-white/30 hover:bg-white/30">
-              <Link to="/urgent">
+              <a href="#callbackwidget">
                 Срочный вызов 24/7
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

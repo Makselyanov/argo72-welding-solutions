@@ -174,22 +174,22 @@ const About = () => {
 
               <div className="flex flex-wrap gap-3 mt-6">
                 <Button asChild size="lg">
-                  <Link to="/kontakty">
+                  <a href="#callbackwidget">
                     <Camera className="mr-2 h-5 w-5" />
                     Отправить фото детали
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link to="/ceny/kalkulyator">
+                  <a href="#callbackwidget">
                     <Calculator className="mr-2 h-5 w-5" />
                     Рассчитать стоимость
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <Link to="/urgent">
+                  <a href="#callbackwidget">
                     <AlertCircle className="mr-2 h-5 w-5" />
                     Срочный вызов 24/7
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </section>
@@ -662,22 +662,22 @@ const About = () => {
 
               <div className="flex flex-wrap gap-3 justify-center">
                 <Button asChild size="lg">
-                  <Link to="/kontakty">
+                  <a href="#callbackwidget">
                     <Camera className="mr-2 h-5 w-5" />
                     Отправить фото детали
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <Link to="/urgent">
+                  <a href="#callbackwidget">
                     <Clock className="mr-2 h-5 w-5" />
                     Срочный вызов 24/7
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link to="/ceny/kalkulyator">
+                  <a href="#callbackwidget">
                     <Calculator className="mr-2 h-5 w-5" />
                     Рассчитать стоимость
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </section>
