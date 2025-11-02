@@ -42,7 +42,7 @@ const Segments = () => {
                       </ul>
                     </div>
                     <Button asChild variant="outline" className="w-full group">
-                      <Link to={`/dlya-kogo/${segment.slug}`}>
+                      <Link to={`/komu/${segment.slug}`}>
                         Подробнее
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Link>
