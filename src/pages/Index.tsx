@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Clock, Shield, Award, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,8 +14,22 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <Helmet>
+        <title>Argo72 — Сварка цветных металлов в Тюмени | TIG MIG алюминий, пайка меди 24/7</title>
+        <meta 
+          name="description" 
+          content="Профессиональная сварка цветных металлов: алюминий TIG/MIG, пайка меди и латуни, срочный выезд 24/7 по Тюмени. Контроль качества, гарантия." 
+        />
+        <meta 
+          name="keywords" 
+          content="сварка тюмень, аргонная сварка тюмень, сварка цветных металлов, TIG сварка алюминия, MIG сварка, сварка нержавейки, сварка меди, пайка латуни, сварка титана, ВИК контроль, УЗК, неразрушающий контроль, сварщик на час тюмень, аутсорс сварщика, ремонт труб, ремонт балконов, монтаж металлоконструкций, аварийная сварка 24/7" 
+        />
+        <link rel="canonical" href="https://argo72.ru/" />
+      </Helmet>
+      
+      <div className="min-h-screen flex flex-col">
+        <Header />
 
       {/* Hero секция */}
       <section className="relative bg-gradient-hero text-primary-foreground py-20 lg:py-32">
@@ -169,13 +184,13 @@ const Index = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { title: "ТСЖ и ЖСК", href: "/dlya-kogo/tszh" },
-              { title: "Управляющие компании", href: "/dlya-kogo/uk" },
-              { title: "HVAC и холодильщики", href: "/dlya-kogo/hvac" },
-              { title: "Автосервисы", href: "/dlya-kogo/auto" },
-              { title: "Лодки и катера", href: "/dlya-kogo/boats" },
-              { title: "Производство", href: "/dlya-kogo/manufacturing" },
-              { title: "Девелоперы", href: "/dlya-kogo/dev" },
+              { title: "ТСЖ и ЖСК", href: "/komu/tszh-zhsk" },
+              { title: "Управляющие компании", href: "/komu/upravlyayushchie-kompanii" },
+              { title: "HVAC и холодильщики", href: "/komu/hvac-holodilshchiki" },
+              { title: "Автосервисы", href: "/komu/avtoservis-tyuning" },
+              { title: "Лодки и катера", href: "/komu/lodki-motosalony" },
+              { title: "Производство", href: "/komu/proizvodstvennye-msp" },
+              { title: "Девелоперы", href: "/komu/developery-stroiteli" },
               { title: "Все отрасли →", href: "/dlya-kogo" },
             ].map((segment) => (
               <Link
@@ -240,8 +255,9 @@ const Index = () => {
         </div>
       </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

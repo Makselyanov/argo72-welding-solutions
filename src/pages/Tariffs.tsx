@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -10,11 +11,25 @@ import tariffsData from "@/data/tariffs.json";
 
 const Tariffs = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-1 bg-background py-12">
-        <div className="container mx-auto px-4">
-          <Breadcrumbs items={[{ label: "Тарифы" }]} />
+    <>
+      <Helmet>
+        <title>Тарифы на сварку — сварщик на час, абонементы для ТСЖ/УК | Argo72 Тюмень</title>
+        <meta 
+          name="description" 
+          content="Гибкие тарифы: разовые работы, сварщик на час, абонементы для ТСЖ и управляющих компаний. Прозрачное ценообразование, гарантия качества. Тюмень." 
+        />
+        <meta 
+          name="keywords" 
+          content="тарифы на сварку тюмень, сварщик на час цена, аутсорс сварщика, абонемент сварщика для ТСЖ, обслуживание управляющих компаний, срочная сварка 24/7, выезд сварщика тюмень, цены на аргонную сварку, стоимость сварки алюминия" 
+        />
+        <link rel="canonical" href="https://argo72.ru/tarify" />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1 bg-background py-12">
+          <div className="container mx-auto px-4">
+            <Breadcrumbs items={[{ label: "Тарифы" }]} />
           
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Тарифы и пакеты</h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
@@ -176,6 +191,7 @@ const Tariffs = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

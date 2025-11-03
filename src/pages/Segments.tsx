@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -9,11 +10,25 @@ import segmentsData from "@/data/segments.json";
 
 const Segments = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-1 bg-background py-12">
-        <div className="container mx-auto px-4">
-          <Breadcrumbs items={[{ label: "Кому помогаем" }]} />
+    <>
+      <Helmet>
+        <title>Кому помогаем — сварка для ТСЖ, УК, производства, автосервисов | Argo72 Тюмень</title>
+        <meta 
+          name="description" 
+          content="Отраслевые решения по сварке: для ТСЖ и управляющих компаний, строителей, HVAC, автосервисов, производства, складов, агротехники. Тюмень." 
+        />
+        <meta 
+          name="keywords" 
+          content="сварка для ТСЖ тюмень, сварка для управляющих компаний, сварка на стройке, сварка для HVAC, ремонт холодильного оборудования, сварка алюминия автосервис, ремонт лодок тюмень, сварка для производства, аутсорс сварщика для бизнеса, ремонт агротехники, сварка спецтехники" 
+        />
+        <link rel="canonical" href="https://argo72.ru/dlya-kogo" />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1 bg-background py-12">
+          <div className="container mx-auto px-4">
+            <Breadcrumbs items={[{ label: "Кому помогаем" }]} />
           
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Кому помогаем</h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
@@ -56,6 +71,7 @@ const Segments = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 
