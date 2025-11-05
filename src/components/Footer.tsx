@@ -155,12 +155,9 @@ const Footer = () => {
               <p>© {currentYear} ООО «АРГО». Все права защищены</p>
               <p className="text-xs mt-1">ИНН: 720321829472</p>
             </div>
-            <div className="flex space-x-6">
+            <div>
               <Link to="/privacy" className="hover:text-primary transition-colors">
                 Политика конфиденциальности
-              </Link>
-              <Link to="/terms" className="hover:text-primary transition-colors">
-                Договор оферты
               </Link>
             </div>
           </div>
