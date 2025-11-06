@@ -14,6 +14,7 @@ const Header = () => {
   const navigation = [
     { name: "Услуги", href: "/uslugi" },
     { name: "Кому помогаем", href: "/dlya-kogo" },
+    { name: "Биржа сварщиков", href: "/marketplace" },
     { name: "Тарифы", href: "/tarify" },
     { name: "Цены", href: "/ceny" },
     { name: "Кейсы", href: "/kejsy" },

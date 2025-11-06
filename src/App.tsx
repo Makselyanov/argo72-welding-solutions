@@ -14,6 +14,7 @@ import KnowledgeBase from "./pages/KnowledgeBase";
 import Article from "./pages/Article";
 import SegmentPage from "./pages/SegmentPage";
 import Cases from "./pages/Cases";
+import Marketplace from "./pages/Marketplace";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,8 @@ const App = () => (
           <Route path="/baza-znaniy/:slug" element={<Article />} />
           <Route path="/komu/:slug" element={<SegmentPage />} />
           <Route path="/kejsy" element={<Cases />} />
+          <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/birzha" element={<Marketplace />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
