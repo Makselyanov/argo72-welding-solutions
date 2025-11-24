@@ -1,50 +1,34 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import Services from "./pages/Services";
-import ServiceDetailPage from "./pages/ServiceDetailPage";
-import Segments from "./pages/Segments";
-import Tariffs from "./pages/Tariffs";
-import Prices from "./pages/Prices";
-import About from "./pages/About";
-import KnowledgeBase from "./pages/KnowledgeBase";
-import Article from "./pages/Article";
-import SegmentPage from "./pages/SegmentPage";
-import Cases from "./pages/Cases";
-import Marketplace from "./pages/Marketplace";
-import NotFound from "./pages/NotFound";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import ServiceDetailPage from './pages/ServiceDetailPage';
+import Cases from './pages/Cases';
+import About from './pages/About';
+import Tariffs from './pages/Tariffs';
+import Article from './pages/Article';
+import Contacts from './pages/Contacts';
+import Privacy from './pages/Privacy';
+import NotFound from './pages/NotFound';
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/uslugi" element={<Services />} />
-          <Route path="/uslugi/:slug" element={<ServiceDetailPage />} />
-          <Route path="/dlya-kogo" element={<Segments />} />
-          <Route path="/tarify" element={<Tariffs />} />
-          <Route path="/ceny" element={<Prices />} />
-          <Route path="/o-kompanii" element={<About />} />
-          <Route path="/baza-znaniy" element={<KnowledgeBase />} />
-          <Route path="/baza-znaniy/:slug" element={<Article />} />
-          <Route path="/komu/:slug" element={<SegmentPage />} />
-          <Route path="/kejsy" element={<Cases />} />
-          <Route path="/marketplace" element={<Marketplace />} />
-          <Route path="/birzha" element={<Marketplace />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="services" element={<Services />} />
+        <Route path="services/:id" element={<ServiceDetailPage />} />
+        <Route path="cases" element={<Cases />} />
+        <Route path="about" element={<About />} />
+        <Route path="tariffs" element={<Tariffs />} />
+        <Route path="blog/:id" element={<Article />} />
+        <Route path="kontakty" element={<Contacts />} />
+        <Route path="privacy" element={<Privacy />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  );
+}
 
 export default App;
