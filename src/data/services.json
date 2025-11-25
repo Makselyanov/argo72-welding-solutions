@@ -104,7 +104,7 @@
         {
           "id": "vik",
           "title": "Визуально-измерительный контроль",
-          "slug": "nk/vik",
+          "slug": "nk-vik",
           "description": "ВИК швов и соединений",
           "features": [
             "Протокол ВИК",
@@ -116,7 +116,7 @@
         {
           "id": "kapillyarnyy",
           "title": "Капиллярный контроль",
-          "slug": "nk/kapillyarnyy",
+          "slug": "nk-kapillyarnyy",
           "description": "ПК для выявления дефектов",
           "features": [
             "Цветная дефектоскопия",
@@ -128,7 +128,7 @@
         {
           "id": "uzk",
           "title": "УЗК (партнёр)",
-          "slug": "nk/uzk",
+          "slug": "nk-uzk",
           "description": "Ультразвуковой контроль через партнёра",
           "features": [
             "Толщинометрия",
@@ -140,7 +140,7 @@
         {
           "id": "photo-report",
           "title": "Фото/видео отчёт",
-          "slug": "nk/photo-report",
+          "slug": "nk-photo-report",
           "description": "Документирование всех этапов работ",
           "features": [
             "Поэтапная съёмка",
@@ -158,7 +158,7 @@
         {
           "id": "tz",
           "title": "Составление ТЗ",
-          "slug": "inzhiniring/tz",
+          "slug": "inzhiniring-tz",
           "description": "Техническое задание и дефектовка",
           "features": [
             "Выезд на объект",
@@ -170,7 +170,7 @@
         {
           "id": "wps",
           "title": "WPS и техкарты",
-          "slug": "inzhiniring/wps",
+          "slug": "inzhiniring-wps",
           "description": "Разработка технологии сварки",
           "features": [
             "WPS документация",
@@ -182,7 +182,7 @@
         {
           "id": "podgotovka-kromok",
           "title": "Подготовка кромок",
-          "slug": "inzhiniring/podgotovka-kromok",
+          "slug": "inzhiniring-podgotovka-kromok",
           "description": "Резка и зачистка перед сваркой",
           "features": [
             "Плазменная резка",
@@ -194,7 +194,7 @@
         {
           "id": "finish",
           "title": "Финишная обработка",
-          "slug": "inzhiniring/finish",
+          "slug": "inzhiniring-finish",
           "description": "Полировка и пескоструй (партнёр)",
           "features": [
             "Шлифовка швов",
