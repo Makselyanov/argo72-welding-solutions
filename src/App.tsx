@@ -1,7 +1,7 @@
-import React from 'react'; 
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './pages/Home';
+import IndexPage from './pages/Index';
 import Services from './pages/Services';
 import ServiceDetailPage from './pages/ServiceDetailPage';
 import Cases from './pages/Cases';
@@ -16,7 +16,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+        <Route index element={<IndexPage />} />
         <Route path="services" element={<Services />} />
         <Route path="services/:slug" element={<ServiceDetailPage />} />
         <Route path="uslugi" element={<Services />} />
