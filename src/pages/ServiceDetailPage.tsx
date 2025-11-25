@@ -18,7 +18,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { getServiceBySlug } from "@/data/servicesDetailed";
 import { useState } from "react";
 
-const WHATSAPP_NUMBER = "79829106673";
+const WHATSAPP_NUMBER = "79222675034";
 
 const ServiceDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -119,7 +119,7 @@ const ServiceDetailPage = () => {
         addressLocality: "Тюмень",
         addressCountry: "RU",
       },
-      telephone: "+7-982-910-66-73",
+      telephone: "+7-922-267-50-34",
     },
     areaServed: "Тюмень",
     description: service.subtitle,
