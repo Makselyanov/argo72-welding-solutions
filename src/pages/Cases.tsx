@@ -12,27 +12,27 @@ const Cases = () => {
     <>
       <Helmet>
         <title>Кейсы и примеры работ — Аргонодуговая сварка в Тюмени | АРГО72</title>
-        <meta 
-          name="description" 
-          content="Реальные проекты по сварке алюминия, нержавейки, меди. Металлоконструкции, ремонт оборудования, изготовление деталей. Примеры работ сварщиков в Тюмени с фото." 
+        <meta
+          name="description"
+          content="Реальные проекты по сварке алюминия, нержавейки, меди. Металлоконструкции, ремонт оборудования, изготовление деталей. Примеры работ сварщиков в Тюмени с фото."
         />
-        <meta 
-          name="keywords" 
-          content="кейсы сварка тюмень, примеры сварочных работ, портфолио сварщика, проекты аргонодуговой сварки, металлоконструкции кейсы, ремонт оборудования примеры" 
+        <meta
+          name="keywords"
+          content="кейсы сварка тюмень, примеры сварочных работ, портфолио сварщика, проекты аргонодуговой сварки, металлоконструкции кейсы, ремонт оборудования примеры"
         />
         <link rel="canonical" href="https://argo-72.ru/kejsy" />
       </Helmet>
-      
+
       <div className="min-h-screen bg-background">
         <Header />
-        
+
         <main className="container mx-auto px-4 py-8">
-          <Breadcrumbs 
+          <Breadcrumbs
             items={[
               { label: "Кейсы", href: "/kejsy" }
             ]}
           />
-          
+
           <div className="mb-12 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Наши <span className="text-primary">кейсы</span>
@@ -59,8 +59,8 @@ const Cases = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {caseStudy.images.map((image, idx) => (
                       <div key={idx} className="overflow-hidden rounded-lg border">
-                        <img 
-                          src={image} 
+                        <img
+                          src={image}
                           alt={`${caseStudy.title} - фото ${idx + 1}`}
                           className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -160,9 +160,9 @@ const Cases = () => {
             <p className="text-muted-foreground mb-6">
               Свяжитесь с нами для обсуждения вашего проекта
             </p>
-            <a 
-              href="https://wa.me/79123825078" 
-              target="_blank" 
+            <a
+              href="https://wa.me/79222675034"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 font-medium transition-colors"
             >
