@@ -1,9 +1,15 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const Contacts = () => {
   return (
     <div className="pt-20 min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Контакты Argo72 — сварка цветных металлов в Тюмени</title>
+        <meta name="description" content="Контакты Argo72: телефоны, адрес, режим работы. Срочный выезд 24/7, выездные услуги и инженерная поддержка по сварке." />
+        <link rel="canonical" href="https://argo-72.ru/kontakty" />
+      </Helmet>
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Контакты</h1>
         
@@ -18,7 +24,7 @@ const Contacts = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-gray-900">Адрес</h3>
-                  <p className="text-gray-600">г. Тюмень, ул. Республики, 143</p>
+                  <p className="text-gray-600">г. Тюмень, ул. Камчатская, 1</p>
                 </div>
               </div>
 
@@ -27,10 +33,10 @@ const Contacts = () => {
                   <Phone size={24} />
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-900">Телефон</h3>
-                  <a href="tel:+79000000000" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    +7 (900) 000-00-00
-                  </a>
+                  <h3 className="font-medium text-gray-900">Телефоны</h3>
+                  <a href="tel:+79222675034" className="block text-gray-600 hover:text-blue-600 transition-colors">+7 922 267-50-34</a>
+                  <a href="tel:+79058248564" className="block text-gray-600 hover:text-blue-600 transition-colors">+7 905 824-85-64</a>
+                  <div className="text-xs text-gray-500">Круглосуточно — аварийная служба</div>
                 </div>
               </div>
 
@@ -40,9 +46,7 @@ const Contacts = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-gray-900">Email</h3>
-                  <a href="mailto:info@argo-72.ru" className="text-gray-600 hover:text-blue-600 transition-colors">
-                    info@argo-72.ru
-                  </a>
+                  <a href="mailto:info@argo-72.ru" className="text-gray-600 hover:text-blue-600 transition-colors">info@argo-72.ru</a>
                 </div>
               </div>
 
@@ -52,8 +56,9 @@ const Contacts = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-gray-900">Режим работы</h3>
-                  <p className="text-gray-600">Пн-Пт: 9:00 - 18:00</p>
-                  <p className="text-gray-600">Сб-Вс: Выходной</p>
+                  <p className="text-gray-600">Пн-Пт: 8:00 - 20:00</p>
+                  <p className="text-gray-600">Сб-Вс: 9:00 - 18:00</p>
+                  <p className="text-sm text-secondary font-medium mt-1">Аварийная служба 24/7</p>
                 </div>
               </div>
             </div>
