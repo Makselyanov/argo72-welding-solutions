@@ -20,7 +20,7 @@ const Header = () => {
     { name: "Кейсы", href: "/kejsy" },
     { name: "Качество", href: "/kachestvo" },
     { name: "База знаний", href: "/baza-znaniy" },
-    { name: "О компании", href: "/o-kompanii" },
+    { name: "О нас", href: "/o-nas" },
     { name: "Контакты", href: "/kontakty" },
   ];
 
@@ -30,9 +30,9 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Логотип */}
           <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src={argoLogo} 
-              alt="Argo72 логотип" 
+            <img
+              src={argoLogo}
+              alt="Argo72 логотип"
               className="h-12 w-12 object-contain rounded-lg"
             />
             <div className="hidden sm:block">

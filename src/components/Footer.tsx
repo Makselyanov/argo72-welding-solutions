@@ -78,8 +78,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/o-kompanii" className="text-muted-foreground hover:text-primary transition-colors">
-                  О компании
+                <Link to="/o-nas" className="text-muted-foreground hover:text-primary transition-colors">
+                  О нас
                 </Link>
               </li>
             </ul>

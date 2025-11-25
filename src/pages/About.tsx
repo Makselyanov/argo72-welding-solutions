@@ -79,8 +79,8 @@ const About = () => {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "О компании",
-            "item": "https://argo72.ru/o-kompanii"
+            "name": "О нас",
+            "item": "https://argo72.ru/o-nas"
           }
         ]
       },
@@ -127,7 +127,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>О компании Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень</title>
+        <title>О нас Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень</title>
         <meta
           name="description"
           content="Argo72 — 19 лет опыта. Сварка цветных металлов: TIG/MIG алюминий, пайка меди/латуни, выезд 24/7, ВИК/ПК, разработка ТЗ/WPS. Тюмень и область."
@@ -136,9 +136,9 @@ const About = () => {
           name="keywords"
           content="сварка цветных металлов, TIG алюминий Тюмень, пайка меди, сварщик на час, ВИК контроль, капиллярный контроль, разработка ТЗ, WPS, выездной сварщик"
         />
-        <link rel="canonical" href="https://argo72.ru/o-kompanii" />
+        <link rel="canonical" href="https://argo72.ru/o-nas" />
 
-        <meta property="og:title" content="О компании Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень" />
+        <meta property="og:title" content="О нас Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень" />
         <meta property="og:description" content="19 лет опыта в сварке цветных металлов. TIG/MIG алюминий, пайка меди, выезд 24/7, контроль качества." />
         <meta property="og:url" content="https://argo72.ru/o-kompanii" />
         <meta property="og:type" content="website" />
@@ -153,13 +153,23 @@ const About = () => {
 
         <main className="flex-1">
           <div className="container mx-auto px-4 py-8">
-            <Breadcrumbs items={[{ label: "О компании" }]} />
+            <Breadcrumbs items={[{ label: "О нас" }]} />
 
             {/* HERO */}
             <section className="mb-16">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                О компании Argo72
+                О нас Argo72
               </h1>
+
+              <div className="prose prose-lg max-w-none mb-6">
+                <p className="text-muted-foreground leading-relaxed">
+                  Основатель Калугин Максим Александрович — инженер-сварщик с высшим инженерным и профильным техническим сварочным образованием. В сварочном производстве с 2006 года. Специализируется на выполнении ответственных сварочных работ, соблюдении технологий и контроле качества швов.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  В 2025 году прошёл обучение в учебном центре «Бизнес-клуб “ТЕРРА”» — некоммерческая организация, объединяющая предпринимателей, желающих менять жизнь и мир вокруг. В Тюмени регулярно повышает квалификацию и следит за современными требованиями к безопасности и качеству сварки.
+                </p>
+              </div>
+
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Argo72 — мастерская точной сварки цветных металлов в Тюмени.{" "}

@@ -31,7 +31,7 @@ function App() {
 
         {/* Company & Info */}
         <Route path="about" element={<About />} />
-        <Route path="o-kompanii" element={<About />} />
+        <Route path="o-nas" element={<About />} />
         <Route path="kachestvo" element={<About />} />
 
         {/* Cases */}
