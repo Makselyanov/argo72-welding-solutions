@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
 import {
   ShieldCheck,
   Award,
@@ -19,7 +18,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import founder from "@/assets/founder.jpg";
 
 const About = () => {
   const jsonLd = {
@@ -81,8 +79,8 @@ const About = () => {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "О нас",
-            "item": "https://argo72.ru/o-nas"
+            "name": "О компании",
+            "item": "https://argo72.ru/o-kompanii"
           }
         ]
       },
@@ -129,7 +127,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>О нас Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень</title>
+        <title>О компании Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень</title>
         <meta
           name="description"
           content="Argo72 — 19 лет опыта. Сварка цветных металлов: TIG/MIG алюминий, пайка меди/латуни, выезд 24/7, ВИК/ПК, разработка ТЗ/WPS. Тюмень и область."
@@ -138,15 +136,13 @@ const About = () => {
           name="keywords"
           content="сварка цветных металлов, TIG алюминий Тюмень, пайка меди, сварщик на час, ВИК контроль, капиллярный контроль, разработка ТЗ, WPS, выездной сварщик"
         />
-        <link rel="canonical" href="https://argo72.ru/o-nas" />
+        <link rel="canonical" href="https://argo72.ru/o-kompanii" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="О нас Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень" />
+        <meta property="og:title" content="О компании Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень" />
         <meta property="og:description" content="19 лет опыта в сварке цветных металлов. TIG/MIG алюминий, пайка меди, выезд 24/7, контроль качества." />
-        <meta property="og:url" content="https://argo72.ru/o-nas" />
+        <meta property="og:url" content="https://argo72.ru/o-kompanii" />
         <meta property="og:type" content="website" />
 
-        {/* JSON-LD */}
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -157,49 +153,21 @@ const About = () => {
 
         <main className="flex-1">
           <div className="container mx-auto px-4 py-8">
-            <Breadcrumbs items={[{ label: "О нас" }]} />
+            <Breadcrumbs items={[{ label: "О компании" }]} />
 
-            {/* Hero + основатель */}
+            {/* HERO */}
             <section className="mb-16">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                О нас
+                О компании Argo72
               </h1>
-
-              <div className="grid md:grid-cols-[auto,1fr] gap-6 items-center mb-8">
-                <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-lg border border-border bg-muted flex items-center justify-center">
-                  <img
-                    src={founder}
-                    alt="Калугин Максим Александрович"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="space-y-3 text-muted-foreground">
-                  <p>
-                    Основатель <strong className="text-foreground">Калугин Максим Александрович</strong> — инженер-сварщик
-                    с высшим инженерным и профильным техническим сварочным образованием.
-                  </p>
-                  <p>
-                    В сварочном производстве с 2006 года. Специализируется на выполнении ответственных сварочных работ,
-                    соблюдении технологий и контроле качества швов.
-                  </p>
-                  <p>
-                    В 2025 году прошёл обучение в учебном центре «Бизнес-клуб “ТЕРРА”» — некоммерческая организация,
-                    объединяющая предпринимателей, желающих менять жизнь и мир вокруг. В Тюмени регулярно повышает
-                    квалификацию и следит за современными требованиями к безопасности и качеству сварки.
-                  </p>
-                </div>
-              </div>
-
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Argo72 — мастерская точной сварки цветных металлов в Тюмени.{" "}
-                  <strong className="text-foreground">19 лет практики (с 2006 года)</strong>,
-                  специализация: <strong className="text-primary">TIG/MIG по алюминию</strong>,{" "}
+                  <strong className="text-foreground">19 лет практики (с 2006 года)</strong>, специализация:{" "}
+                  <strong className="text-primary">TIG/MIG по алюминию</strong>,{" "}
                   <strong className="text-primary">пайка меди/латуни</strong>,{" "}
                   <strong className="text-primary">контроль ВИК/ПК</strong>, разработка{" "}
-                  <strong className="text-primary">ТЗ и WPS</strong>.
-                  Работаем вдвоём: быстро, лично, без лишних посредников.
+                  <strong className="text-primary">ТЗ и WPS</strong>. Работаем вдвоём: быстро, лично, без лишних посредников.
                 </p>
               </div>
 
@@ -225,7 +193,7 @@ const About = () => {
               </div>
             </section>
 
-            {/* Кто мы */}
+            {/* КТО МЫ */}
             <section className="mb-16">
               <h2 className="text-3xl font-bold mb-6 text-foreground">
                 Кто мы и почему нам доверяют
@@ -242,12 +210,12 @@ const About = () => {
                   <CardContent className="space-y-3 text-muted-foreground">
                     <p>
                       <strong className="text-foreground">Калугин Максим Александрович</strong> и{" "}
-                      <strong className="text-foreground">Кузнецов Максим Владимирович</strong> —
-                      высшее сварочное образование + техническое сварочное образование.
+                      <strong className="text-foreground">Кузнецов Максим Владимирович</strong> — высшее сварочное образование +
+                      техническое сварочное образование.
                     </p>
                     <p>
-                      Производственная практика с 2006 года, путь от сварщика до мастера и начальника
-                      участка сварочных работ в Тюмени.
+                      Производственная практика с 2006 года, путь от сварщика до мастера и начальника участка сварочных работ
+                      в Тюмени.
                     </p>
                   </CardContent>
                 </Card>
@@ -261,12 +229,9 @@ const About = () => {
                   </CardHeader>
                   <CardContent className="space-y-3 text-muted-foreground">
                     <p>
-                      2 специалиста и наёмные сварщики, прошедшие аттестацию — ведущий сварщик/технолог
-                      и мастер-приёмщик.
+                      2 специалиста и наёмные сварщики, прошедшие аттестацию — ведущий сварщик/технолог и мастер-приёмщик.
                     </p>
-                    <p>
-                      Прямое участие в каждом заказе, персональная ответственность, без «потерянных задач».
-                    </p>
+                    <p>Прямое участие в каждом заказе, персональная ответственность, без «потерянных задач».</p>
                   </CardContent>
                 </Card>
               </div>
@@ -278,8 +243,8 @@ const About = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Фокус на цветных металлах</h3>
                       <p className="text-muted-foreground">
-                        Специализируемся на алюминиевых сплавах (Al 5xxx/6xxx), меди и латуни.
-                        Тонкостенные конструкции, узлы с требованиями к тепловложению и эстетике шва.
+                        Специализируемся на алюминиевых сплавах (Al 5xxx/6xxx), меди и латуни. Тонкостенные конструкции,
+                        узлы с требованиями к тепловложению и эстетике шва.
                       </p>
                     </div>
                   </div>
@@ -287,11 +252,9 @@ const About = () => {
               </Card>
             </section>
 
-            {/* 19 лет опыта */}
+            {/* 19 ЛЕТ ОПЫТА */}
             <section className="mb-16">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">
-                19 лет опыта — что это даёт заказчику
-              </h2>
+              <h2 className="text-3xl font-bold mb-6 text-foreground">19 лет опыта — что это даёт заказчику</h2>
 
               <div className="bg-destructive/10 border-l-4 border-destructive p-6 rounded-lg mb-8">
                 <h3 className="font-semibold text-foreground mb-3">Проблемы, с которыми к нам приходят:</h3>
@@ -376,11 +339,9 @@ const About = () => {
               </div>
             </section>
 
-            {/* Организация труда */}
+            {/* ОРГАНИЗАЦИЯ ТРУДА */}
             <section className="mb-16">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">
-                Организация труда как на участке
-              </h2>
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Организация труда как на участке</h2>
 
               <Card>
                 <CardContent className="pt-6">
@@ -390,7 +351,9 @@ const About = () => {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">Сменные задания и контроль качества по этапам</span>
+                      <span className="text-sm text-muted-foreground">
+                        Сменные задания и контроль качества по этапам
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -398,7 +361,402 @@ const About = () => {
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">Разметка, сборка, прихватки, контроль тепловложений</span>
+                      <span className="text-sm text-muted-foreground">
+                        Разметка, сборка, прихватки, контроль тепловложений
+                      </span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <CheckCir
+                      <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">Финальный осмотр, фото-протокол</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        Передача изделия/узла с актом и рекомендациями
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* КОМПЕТЕНЦИИ */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Наши компетенции</h2>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card>
+                  <CardHeader>
+                    <Badge className="w-fit mb-2">Сварка</Badge>
+                    <CardTitle>Алюминий TIG AC/DC</CardTitle>
+                    <CardDescription>Тонкостенные конструкции, эстетичные швы</CardDescription>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    Корпуса, радиаторы/интеркулеры, тонкостенка, лодки/корпуса
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <Badge className="w-fit mb-2">Сварка</Badge>
+                    <CardTitle>Алюминий MIG/MAG</CardTitle>
+                    <CardDescription>Импульсная сварка для серий</CardDescription>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    Серийная и силовая сварка, производственная оснастка
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <Badge className="w-fit mb-2">Пайка</Badge>
+                    <CardTitle>Медь и латунь</CardTitle>
+                    <CardDescription>Высокотемпературная пайка</CardDescription>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    HVAC системы, электрошины, контакты
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <Badge className="w-fit mb-2">Контроль</Badge>
+                    <CardTitle>НК: ВИК/ПК/УЗК</CardTitle>
+                    <CardDescription>Неразрушающий контроль</CardDescription>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    ВИК всегда включён, ПК по запросу, УЗК через партнёра
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <Badge className="w-fit mb-2">Инжиниринг</Badge>
+                    <CardTitle>ТЗ и WPS</CardTitle>
+                    <CardDescription>Техническая документация</CardDescription>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    ТЗ, маршрутные карты, дефектовка
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <Badge className="w-fit mb-2">Выезд</Badge>
+                    <CardTitle>Мобильная бригада</CardTitle>
+                    <CardDescription>24/7 аварийный выезд</CardDescription>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    «Сварщик на час», объектные работы, аварийка 24/7
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
+
+            {/* ЧТО ИЗБЕГАЕТЕ */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Что вы избегаете, работая с нами</h2>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/50">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Повторного передела</h3>
+                    <p className="text-sm text-muted-foreground">Заранее просчитываем режимы и деформации</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/50">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Скрытых затрат</h3>
+                    <p className="text-sm text-muted-foreground">Смета и перечень работ прозрачны</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/50">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Простоя</h3>
+                    <p className="text-sm text-muted-foreground">Придерживаемся SLA на выезд и сроки</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/50">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Рисков по ОТ и ПБ</h3>
+                    <p className="text-sm text-muted-foreground">Соблюдаем требования и держим порядок</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* КОМАНДА */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Команда Argo72</h2>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card>
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="h-16 w-16 rounded-full bg-gradient-hero flex items-center justify-center">
+                        <Users className="h-8 w-8 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <CardTitle>Максим Кузнецов</CardTitle>
+                        <CardDescription>Ведущий сварщик / технолог</CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-2 text-sm text-muted-foreground">
+                    <p>19 лет практики, высшее и техническое сварочное образование</p>
+                    <p>TIG/MIG по алюминию, пайка меди/латуни</p>
+                    <p>Организация производства: WPS, маршруты, контроль качества, обучение</p>
+                    <div className="pt-4">
+                      <a
+                        href="https://t.me/makselyanov"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline flex items-center gap-2"
+                      >
+                        <Phone className="h-4 w-4" />
+                        +7 905 824-85-64
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="h-16 w-16 rounded-full bg-gradient-hero flex items-center justify-center">
+                        <Users className="h-8 w-8 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <CardTitle>Максим Калугин</CardTitle>
+                        <CardDescription>Мастер-приёмщик</CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-2 text-sm text-muted-foreground">
+                    <p>Планирование работ и координация проектов</p>
+                    <p>Коммуникации с заказчиками, логистика</p>
+                    <p>Приём/выдача изделий, фото-отчёты, закрывающие документы</p>
+                    <div className="pt-4">
+                      <a
+                        href="https://t.me/KaluginMaxim"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline flex items-center gap-2"
+                      >
+                        <Phone className="h-4 w-4" />
+                        +7 922 267-50-34
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
+
+            {/* ДОКИ */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Документы и реквизиты</h2>
+
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <FileText className="h-5 w-5 text-primary" />
+                        Юридическая информация
+                      </h3>
+                      <div className="space-y-2 text-sm text-muted-foreground">
+                        <p>
+                          <strong className="text-foreground">Наименование:</strong> ООО «АРГО»
+                        </p>
+                        <p>
+                          <strong className="text-foreground">Город:</strong> Тюмень
+                        </p>
+                        <p>
+                          <strong className="text-foreground">ИНН:</strong> 720321829472
+                        </p>
+                        <p>
+                          <strong className="text-foreground">Адрес:</strong> г. Тюмень, ул. Камчатская, 1
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <ShieldCheck className="h-5 w-5 text-primary" />
+                        Документооборот
+                      </h3>
+                      <div className="space-y-2 text-sm text-muted-foreground">
+                        <p>• Договор на выполнение работ</p>
+                        <p>• Смета с детализацией</p>
+                        <p>• Акты КС-2/КС-3 (при необходимости)</p>
+                        <p>• ТЗ и WPS-карты</p>
+                        <p>• Протоколы ВИК/ПК</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* КАК НАЧАТЬ */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Как начать работу</h2>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <Card>
+                  <CardHeader>
+                    <div className="h-12 w-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-3">
+                      1
+                    </div>
+                    <CardTitle className="text-lg">Отправьте фото/чертёж</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    Через форму на сайте или напрямую в Telegram
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <div className="h-12 w-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-3">
+                      2
+                    </div>
+                    <CardTitle className="text-lg">Получите расчёт</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    Смета и сроки в течение 30–60 минут
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <div className="h-12 w-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-3">
+                      3
+                    </div>
+                    <CardTitle className="text-lg">Подтверждаем и стартуем</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-sm text-muted-foreground">
+                    Согласование ТЗ и начало работ
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="flex flex-wrap gap-3 justify-center">
+                <Button asChild size="lg">
+                  <a href="#callbackwidget">
+                    <Camera className="mr-2 h-5 w-5" />
+                    Отправить фото детали
+                  </a>
+                </Button>
+                <Button asChild variant="secondary" size="lg">
+                  <a href="#callbackwidget">
+                    <Clock className="mr-2 h-5 w-5" />
+                    Срочный вызов 24/7
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <a href="#callbackwidget">
+                    <Calculator className="mr-2 h-5 w-5" />
+                    Рассчитать стоимость
+                  </a>
+                </Button>
+              </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Часто задаваемые вопросы</h2>
+
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger className="text-left">
+                    Сколько занимает оценка по фото?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Обычно до 30–60 минут в рабочее время. Мы изучаем фото, уточняем технические требования и предоставляем
+                    расчёт стоимости и сроков.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2">
+                  <AccordionTrigger className="text-left">
+                    Делаете выезд на объект?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Да, предоставляем услугу «сварщик на час» (минимум 2 часа) и аварийный выезд 24/7 по Тюмени и области.
+                    Срочные работы выполняются с коэффициентом.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3">
+                  <AccordionTrigger className="text-left">
+                    Нужен ли чертёж для работы?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Для большинства работ достаточно фото и размеров. Для проектных работ составим ТЗ и WPS сами на основе
+                    ваших требований.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4">
+                  <AccordionTrigger className="text-left">
+                    Делаете неразрушающий контроль?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    ВИК (визуально-измерительный контроль) делаем всегда. ПК (капиллярный контроль) — по запросу. УЗК
+                    выполняет проверенный партнёр.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </section>
+
+            {/* ПЛАШКА ДОВЕРИЯ */}
+            <section className="mb-16">
+              <Card className="bg-gradient-hero text-primary-foreground">
+                <CardContent className="pt-6">
+                  <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                    <div>
+                      <Award className="h-8 w-8 mx-auto mb-2" />
+                      <div className="font-semibold">19 лет</div>
+                      <div className="text-sm opacity-90">опыта</div>
+                    </div>
+                    <div>
+                      <FileText className="h-8 w-8 mx-auto mb-2" />
+                      <div className="font-semibold">Документы</div>
+                      <div className="text-sm opacity-90">и отчётность</div>
+                    </div>
+                    <div>
+                      <Clock className="h-8 w-8 mx-auto mb-2" />
+                      <div className="font-semibold">SLA</div>
+                      <div className="text-sm opacity-90">на сроки</div>
+                    </div>
+                    <div>
+                      <ShieldCheck className="h-8 w-8 mx-auto mb-2" />
+                      <div className="font-semibold">ОТ/ПБ</div>
+                      <div className="text-sm opacity-90">вентиляция, СИЗ</div>
+                    </div>
+                    <div>
+                      <Camera className="h-8 w-8 mx-auto mb-2" />
+                      <div className="font-semibold">Фото</div>
+                      <div className="text-sm opacity-90">протокол</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </section>
+          </div>
+        </main>
+
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+export default About;
