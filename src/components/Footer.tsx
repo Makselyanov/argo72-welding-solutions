@@ -13,9 +13,9 @@ const Footer = () => {
           {/* О компании */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src={argoLogo} 
-                alt="Argo72 логотип" 
+              <img
+                src={argoLogo}
+                alt="Argo72 логотип"
                 className="h-12 w-12 object-contain rounded-lg"
               />
               <div>

@@ -46,12 +46,14 @@ function App() {
         {/* Knowledge Base & Blog */}
         <Route path="blog/:id" element={<Article />} />
         <Route path="baza-znaniy" element={<KnowledgeBase />} />
+        <Route path="baza-znaniy/:slug" element={<Article />} />
 
         {/* Marketplace */}
         <Route path="marketplace" element={<Marketplace />} />
 
         {/* Segments (For Whom) */}
         <Route path="dlya-kogo" element={<Segments />} />
+        <Route path="dlya-kogo/:slug" element={<SegmentPage />} />
         <Route path="komu/:slug" element={<SegmentPage />} />
 
         {/* Other */}
