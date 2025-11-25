@@ -11,20 +11,50 @@ import Article from './pages/Article';
 import Contacts from './pages/Contacts';
 import Privacy from './pages/Privacy';
 import NotFound from './pages/NotFound';
+import KnowledgeBase from './pages/KnowledgeBase';
+import Marketplace from './pages/Marketplace';
+import Prices from './pages/Prices';
+import Segments from './pages/Segments';
+import SegmentPage from './pages/SegmentPage';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<IndexPage />} />
+
+        {/* Services */}
         <Route path="services" element={<Services />} />
         <Route path="services/:slug" element={<ServiceDetailPage />} />
         <Route path="uslugi" element={<Services />} />
         <Route path="uslugi/:slug" element={<ServiceDetailPage />} />
-        <Route path="cases" element={<Cases />} />
+
+        {/* Company & Info */}
         <Route path="about" element={<About />} />
+        <Route path="o-kompanii" element={<About />} />
+        <Route path="kachestvo" element={<About />} />
+
+        {/* Cases */}
+        <Route path="cases" element={<Cases />} />
+        <Route path="kejsy" element={<Cases />} />
+
+        {/* Pricing */}
         <Route path="tariffs" element={<Tariffs />} />
+        <Route path="tarify" element={<Tariffs />} />
+        <Route path="ceny" element={<Prices />} />
+
+        {/* Knowledge Base & Blog */}
         <Route path="blog/:id" element={<Article />} />
+        <Route path="baza-znaniy" element={<KnowledgeBase />} />
+
+        {/* Marketplace */}
+        <Route path="marketplace" element={<Marketplace />} />
+
+        {/* Segments (For Whom) */}
+        <Route path="dlya-kogo" element={<Segments />} />
+        <Route path="komu/:slug" element={<SegmentPage />} />
+
+        {/* Other */}
         <Route path="kontakty" element={<Contacts />} />
         <Route path="privacy" element={<Privacy />} />
         <Route path="*" element={<NotFound />} />
