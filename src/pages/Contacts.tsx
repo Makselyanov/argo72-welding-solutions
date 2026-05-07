@@ -90,11 +90,11 @@ const Contacts = () => {
 
             <div className="bg-white p-2 rounded-2xl shadow-lg h-[400px] md:h-auto relative overflow-hidden">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c0e6f522cd3777667aea48bef94b047455e9adaf19b1e6aa172cc62b835a06d&amp;source=constructor"
+                src="https://yandex.ru/map-widget/v1/?ll=65.643412%2C57.107802&mode=search&text=%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8%2C%20256%20%D0%BA2%20%D1%81%D1%823&z=16"
                 width="100%"
                 height="100%"
                 frameBorder="0"
-                title="Yandex Map"
+                title="Карта: ул. Республики, 256 к2 ст3"
                 className="w-full h-full rounded-xl"
               ></iframe>
             </div>
