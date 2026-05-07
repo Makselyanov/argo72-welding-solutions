@@ -3,7 +3,7 @@ import { ServiceCategory } from "@/types/marketplace";
 export const serviceCategories: ServiceCategory[] = [
   {
     id: "1",
-    name: "Сварка цветных металлов",
+    name: "Сварочный цех",
     slug: "svarka-tsvetnyh-metallov",
     shortDescription: "Аргонодуговая сварка алюминия, меди, латуни, бронзы",
     iconName: "Flame",

@@ -24,14 +24,14 @@ const Article = () => {
     "description": article.summary,
     "author": {
       "@type": "Organization",
-      "name": "Argo72"
+      "name": "Аргон-Мастер72"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Argo72",
+      "name": "Аргон-Мастер72",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://argo72.ru/logo.jpg"
+        "url": "https://argo-72.ru/logo.jpg"
       }
     },
     "datePublished": "2025-01-01",
@@ -41,7 +41,7 @@ const Article = () => {
   return (
     <>
       <Helmet>
-        <title>{article.title} | База знаний Argo72</title>
+        <title>{article.title} | База знаний Аргон-Мастер72</title>
         <meta name="description" content={article.summary} />
         <meta name="keywords" content={article.tags.join(", ")} />
         <script type="application/ld+json">
@@ -126,8 +126,8 @@ const Article = () => {
                   <a href="#callbackwidget">Отправить фото детали</a>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="https://t.me/KaluginMaxim" target="_blank" rel="noopener noreferrer">
-                    WhatsApp / Telegram
+                  <a href="https://t.me/+79326205501" target="_blank" rel="noopener noreferrer">
+                    Telegram
                   </a>
                 </Button>
                 <Button variant="outline" asChild>

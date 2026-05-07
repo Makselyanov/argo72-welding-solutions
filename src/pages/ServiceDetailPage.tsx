@@ -18,7 +18,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { getServiceBySlug } from "@/data/servicesDetailed";
 import { useState } from "react";
 
-const WHATSAPP_NUMBER = "79222675034";
+const TELEGRAM_URL = "https://t.me/+79326205501";
+const PHONE_NUMBER = "79326205501";
 
 const ServiceDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -78,14 +79,12 @@ const ServiceDetailPage = () => {
     setCalcPrice(`${total - 200} – ${total + 300} ₽`);
   };
 
-  const handleWhatsAppCalc = () => {
-    const message = `Здравствуйте! Запрашиваю смету по услуге "${service.title}". Тип работ: ${calcType}, металл: ${calcMetal}, толщина: ${calcThickness}, длина швов: ${calcLength} м. Расчётная стоимость: ${calcPrice}. Страница: ${window.location.href}`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank");
+  const handleTelegramCalc = () => {
+    window.open(TELEGRAM_URL, "_blank");
   };
 
-  const handleWhatsAppForm = () => {
-    const message = `Здравствуйте! Заявка с сайта.\nУслуга: ${service.title}\nИмя: ${formName}\nТелефон: ${formPhone}\nКомментарий: ${formMessage}\nСтраница: ${window.location.href}`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank");
+  const handleTelegramForm = () => {
+    window.open(TELEGRAM_URL, "_blank");
   };
 
   const breadcrumbItems = [
@@ -113,13 +112,13 @@ const ServiceDetailPage = () => {
     serviceType: service.title,
     provider: {
       "@type": "LocalBusiness",
-      name: "Argo72",
+      name: "Аргон-Мастер72",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Тюмень",
         addressCountry: "RU",
       },
-      telephone: "+7-922-267-50-34",
+      telephone: "+7-932-620-55-01",
     },
     areaServed: "Тюмень",
     description: service.subtitle,
@@ -159,9 +158,9 @@ const ServiceDetailPage = () => {
                     Получить смету
                   </Button>
                   <Button size="lg" variant="outline" asChild className="bg-white/10 border-white/20 hover:bg-white/20">
-                    <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Здравствуйте! Интересует услуга "${service.title}". Страница: ${window.location.href}`)}`} target="_blank" rel="noopener noreferrer">
+                    <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="mr-2 h-5 w-5" />
-                      WhatsApp
+                      Telegram
                     </a>
                   </Button>
                 </div>
@@ -359,9 +358,9 @@ const ServiceDetailPage = () => {
                     <p className="text-sm text-muted-foreground mb-1">Ориентировочная стоимость:</p>
                     <p className="text-2xl font-bold text-primary mb-3">{calcPrice}</p>
                     <div className="flex gap-2">
-                      <Button size="sm" onClick={handleWhatsAppCalc} className="flex-1">
+                      <Button size="sm" onClick={handleTelegramCalc} className="flex-1">
                         <MessageCircle className="mr-2 h-4 w-4" />
-                        Отправить в WhatsApp
+                        Написать в Telegram
                       </Button>
                       <Button size="sm" variant="outline" onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })} className="flex-1">
                         Оставить заявку
@@ -376,7 +375,7 @@ const ServiceDetailPage = () => {
 
         {/* Доверие */}
         <section className="container py-12">
-          <h2 className="text-3xl font-bold mb-8 text-center">Почему доверяют Argo72</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Почему доверяют Аргон-Мастер72</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card>
               <CardContent className="pt-6 text-center">
@@ -444,12 +443,12 @@ const ServiceDetailPage = () => {
               </div>
 
               <div className="flex gap-3">
-                <Button onClick={handleWhatsAppForm} className="flex-1">
+                <Button onClick={handleTelegramForm} className="flex-1">
                   <MessageCircle className="mr-2 h-4 w-4" />
-                  Отправить в WhatsApp
+                  Написать в Telegram
                 </Button>
                 <Button variant="outline" asChild className="flex-1">
-                  <a href={`tel:+${WHATSAPP_NUMBER}`}>
+                  <a href={`tel:+${PHONE_NUMBER}`}>
                     <Phone className="mr-2 h-4 w-4" />
                     Позвонить
                   </a>
@@ -466,12 +465,11 @@ const ServiceDetailPage = () => {
           <Button
             className="w-full"
             onClick={() => {
-              const message = `Здравствуйте! Хочу отправить фото узла для консультации по услуге "${service.title}". Страница: ${window.location.href}`;
-              window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank");
+              window.open(TELEGRAM_URL, "_blank");
             }}
           >
             <MessageCircle className="mr-2 h-4 w-4" />
-            Скинуть фото узла в WhatsApp
+            Написать в Telegram
           </Button>
         </div>
       </main>

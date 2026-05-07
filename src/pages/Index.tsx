@@ -16,16 +16,16 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Argo72 — Сварка цветных металлов в Тюмени | TIG MIG алюминий, пайка меди 24/7</title>
+        <title>Аргон-Мастер72 — Сварочный цех в Тюмени | TIG MIG алюминий, пайка меди 24/7</title>
         <meta 
           name="description" 
-          content="Профессиональная сварка цветных металлов: алюминий TIG/MIG, пайка меди и латуни, срочный выезд 24/7 по Тюмени. Контроль качества, гарантия." 
+          content="Профессиональный сварочный цех: алюминий TIG/MIG, пайка меди и латуни, срочный выезд 24/7 по Тюмени. Контроль качества, гарантия." 
         />
         <meta 
           name="keywords" 
-          content="сварка тюмень, аргонная сварка тюмень, сварка цветных металлов, TIG сварка алюминия, MIG сварка, сварка нержавейки, сварка меди, пайка латуни, сварка титана, ВИК контроль, УЗК, неразрушающий контроль, сварщик на час тюмень, аутсорс сварщика, ремонт труб, ремонт балконов, монтаж металлоконструкций, аварийная сварка 24/7" 
+          content="сварка тюмень, аргонная сварка тюмень, сварочный цех, TIG сварка алюминия, MIG сварка, сварка нержавейки, сварка меди, пайка латуни, сварка титана, ВИК контроль, УЗК, неразрушающий контроль, сварщик на час тюмень, аутсорс сварщика, ремонт труб, ремонт балконов, монтаж металлоконструкций, аварийная сварка 24/7" 
         />
-        <link rel="canonical" href="https://argo72.ru/" />
+        <link rel="canonical" href="https://argo-72.ru/" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">
@@ -37,7 +37,7 @@ const Index = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Сварка цветных металлов
+              Сварочный цех
               <span className="block text-secondary-light">любой сложности</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
@@ -82,7 +82,7 @@ const Index = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Почему выбирают Argo72</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Почему выбирают Аргон-Мастер72</h2>
             <p className="text-xl text-muted-foreground">Профессионализм, надёжность, качество</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -216,7 +216,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="outline" className="bg-white text-secondary border-white hover:bg-white/90">
-              <a href="tel:+79222675034">
+              <a href="tel:+79326205501">
                 Позвонить сейчас
               </a>
             </Button>
@@ -238,7 +238,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Заявка", desc: "Звонок, WhatsApp или форма на сайте" },
+              { step: "01", title: "Заявка", desc: "Звонок, Telegram или форма на сайте" },
               { step: "02", title: "Оценка", desc: "Выезд, осмотр, расчёт стоимости" },
               { step: "03", title: "Работа", desc: "Сварка с контролем качества" },
               { step: "04", title: "Сдача", desc: "Акт выполненных работ, гарантия" },

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock, ExternalLink } from "lucide-react";
 import { Send } from "lucide-react";
 import argoLogo from "@/assets/argo-logo.jpg";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const twoGisUrl = "https://2gis.ru/tyumen/firm/70000001110629809?m=65.643412%2C57.107802%2F16";
 
   return (
     <footer className="border-t bg-muted/30">
@@ -15,33 +15,33 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src={argoLogo}
-                alt="Argo72 логотип"
+                alt="Аргон-Мастер72 логотип"
                 className="h-12 w-12 object-contain rounded-lg"
               />
               <div>
-                <div className="text-lg font-bold">Argo72</div>
-                <div className="text-xs text-muted-foreground">Сварка цветных металлов</div>
+                <div className="text-lg font-bold">Аргон-Мастер72</div>
+                <div className="text-xs text-muted-foreground">Сварочный цех</div>
               </div>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Профессиональная сварка цветных металлов и круглосуточная аварийная служба в Тюмени
+              Профессиональный сварочный цех и круглосуточная аварийная служба в Тюмени
             </p>
             <div className="flex space-x-3">
               <a
-                href="https://t.me/KaluginMaxim"
+                href="https://t.me/+79326205501"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0088cc] text-white hover:bg-[#0077b3] transition-colors"
-                aria-label="Telegram Максим Калугин"
+                aria-label="Telegram Максим"
               >
                 <Send className="h-5 w-5" />
               </a>
               <a
-                href="https://t.me/makselyanov"
+                href="https://t.me/+79326205502"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0088cc] text-white hover:bg-[#0077b3] transition-colors"
-                aria-label="Telegram Максим Кузнецов"
+                aria-label="Telegram Антон"
               >
                 <Send className="h-5 w-5" />
               </a>
@@ -124,18 +124,18 @@ const Footer = () => {
               <li className="flex items-start">
                 <Phone className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
                 <div>
-                  <a href="tel:+79222675034" className="text-muted-foreground hover:text-primary transition-colors block">
-                    +7 922 267-50-34
+                  <a href="tel:+79326205501" className="text-muted-foreground hover:text-primary transition-colors block">
+                    +7 932 620-55-01
                   </a>
-                  <a href="tel:+79058248564" className="text-muted-foreground hover:text-primary transition-colors block">
-                    +7 905 824-85-64
+                  <a href="tel:+79326205502" className="text-muted-foreground hover:text-primary transition-colors block">
+                    +7 932 620-55-02
                   </a>
                   <div className="text-xs text-muted-foreground">Круглосуточно</div>
                 </div>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
-                <span className="text-muted-foreground">г. Тюмень, ул. Камчатская, 1</span>
+                <span className="text-muted-foreground">г. Тюмень, ул. Республики, 256 к2 ст3, 114 бокс</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
@@ -145,21 +145,39 @@ const Footer = () => {
                   <div className="text-secondary font-medium">Аварийка 24/7</div>
                 </div>
               </li>
+              <li className="flex items-start">
+                <ExternalLink className="h-4 w-4 mr-2 mt-0.5 text-primary flex-shrink-0" />
+                <a
+                  href={twoGisUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Отзывы в 2GIS
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-            <div className="mb-4 md:mb-0">
-              <p>© {currentYear} ООО «АРГО». Все права защищены</p>
-              <p className="text-xs mt-1">ИНН: 720321829472</p>
-            </div>
-            <div>
-              <Link to="/privacy" className="hover:text-primary transition-colors">
-                Политика конфиденциальности
-              </Link>
-            </div>
+        <div className="mt-12 rounded-md bg-[#8f1f23] px-5 py-5 text-sm text-white/85">
+          <p className="mb-4 font-medium">© 2026 Аргон-Мастер72. Все права защищены.</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-3 font-medium">
+            <Link to="/privacy" className="hover:text-white transition-colors">
+              Политика конфиденциальности
+            </Link>
+            <Link to="/privacy" className="hover:text-white transition-colors">
+              Cookies
+            </Link>
+            <a href={twoGisUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              Скачать карту компании
+            </a>
+            <a href="https://centrlp.ru" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              разработка сайта — centrlp.ru
+            </a>
+            <a href="https://svrq.ru" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              CRM для сварщика — svrq.ru
+            </a>
           </div>
         </div>
       </div>

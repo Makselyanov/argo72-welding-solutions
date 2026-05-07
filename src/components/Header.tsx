@@ -32,12 +32,12 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img
               src={argoLogo}
-              alt="Argo72 логотип"
+              alt="Аргон-Мастер72 логотип"
               className="h-12 w-12 object-contain rounded-lg"
             />
             <div className="hidden sm:block">
-              <div className="text-lg font-bold text-foreground">Argo72</div>
-              <div className="text-xs text-muted-foreground">Сварка цветных металлов</div>
+              <div className="text-lg font-bold text-foreground">Аргон-Мастер72</div>
+              <div className="text-xs text-muted-foreground">Сварочный цех</div>
             </div>
           </Link>
 

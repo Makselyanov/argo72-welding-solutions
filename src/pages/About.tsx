@@ -25,15 +25,15 @@ const About = () => {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://argo72.ru/#organization",
-        "name": "Argo72",
-        "legalName": "ООО «АРГО»",
-        "description": "Сварка цветных металлов: TIG/MIG алюминий, пайка меди/латуни, выезд 24/7, ВИК/ПК, разработка ТЗ/WPS",
-        "url": "https://argo72.ru",
-        "telephone": ["+79222675034", "+79058248564"],
+        "@id": "https://argo-72.ru/#organization",
+        "name": "Аргон-Мастер72",
+        "legalName": "Аргон-Мастер72",
+        "description": "Сварочный цех: TIG/MIG алюминий, пайка меди/латуни, выезд 24/7, ВИК/ПК, разработка ТЗ/WPS",
+        "url": "https://argo-72.ru",
+        "telephone": ["+79326205501", "+79326205502"],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "ул. Камчатская, 1",
+          "streetAddress": "ул. Республики, 256 к2 ст3, 114 бокс",
           "addressLocality": "Тюмень",
           "addressRegion": "Тюменская область",
           "addressCountry": "RU"
@@ -53,15 +53,14 @@ const About = () => {
       },
       {
         "@type": "Organization",
-        "@id": "https://argo72.ru/#organization",
-        "name": "Argo72",
-        "legalName": "ООО «АРГО»",
-        "taxID": "720321829472",
-        "url": "https://argo72.ru",
-        "logo": "https://argo72.ru/logo.png",
+        "@id": "https://argo-72.ru/#organization",
+        "name": "Аргон-Мастер72",
+        "legalName": "Аргон-Мастер72",
+        "url": "https://argo-72.ru",
+        "logo": "https://argo-72.ru/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+79222675034",
+          "telephone": "+79326205501",
           "contactType": "customer service",
           "availableLanguage": "Russian",
           "areaServed": "RU"
@@ -74,13 +73,13 @@ const About = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Главная",
-            "item": "https://argo72.ru/"
+            "item": "https://argo-72.ru/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "О нас",
-            "item": "https://argo72.ru/o-nas"
+            "item": "https://argo-72.ru/o-nas"
           }
         ]
       },
@@ -127,20 +126,20 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>О нас Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень</title>
+        <title>О нас Аргон-Мастер72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень</title>
         <meta
           name="description"
-          content="Argo72 — 19 лет опыта. Сварка цветных металлов: TIG/MIG алюминий, пайка меди/латуни, выезд 24/7, ВИК/ПК, разработка ТЗ/WPS. Тюмень и область."
+          content="Аргон-Мастер72 — 19 лет опыта. Сварочный цех: TIG/MIG алюминий, пайка меди/латуни, выезд 24/7, ВИК/ПК, разработка ТЗ/WPS. Тюмень и область."
         />
         <meta
           name="keywords"
-          content="сварка цветных металлов, TIG алюминий Тюмень, пайка меди, сварщик на час, ВИК контроль, капиллярный контроль, разработка ТЗ, WPS, выездной сварщик"
+          content="сварочный цех, TIG алюминий Тюмень, пайка меди, сварщик на час, ВИК контроль, капиллярный контроль, разработка ТЗ, WPS, выездной сварщик"
         />
-        <link rel="canonical" href="https://argo72.ru/o-nas" />
+        <link rel="canonical" href="https://argo-72.ru/o-nas" />
 
-        <meta property="og:title" content="О нас Argo72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень" />
+        <meta property="og:title" content="О нас Аргон-Мастер72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень" />
         <meta property="og:description" content="19 лет опыта в сварке цветных металлов. TIG/MIG алюминий, пайка меди, выезд 24/7, контроль качества." />
-        <meta property="og:url" content="https://argo72.ru/o-kompanii" />
+        <meta property="og:url" content="https://argo-72.ru/o-kompanii" />
         <meta property="og:type" content="website" />
 
         <script type="application/ld+json">
@@ -158,12 +157,12 @@ const About = () => {
             {/* HERO */}
             <section className="mb-16">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                О нас Argo72
+                О нас Аргон-Мастер72
               </h1>
 
               <div className="prose prose-lg max-w-none mb-6">
                 <p className="text-muted-foreground leading-relaxed">
-                  Основатель Калугин Максим Александрович — инженер-сварщик с высшим инженерным и профильным техническим сварочным образованием. В сварочном производстве с 2006 года. Специализируется на выполнении ответственных сварочных работ, соблюдении технологий и контроле качества швов.
+                  Основатель Максим — инженер-сварщик с высшим инженерным и профильным техническим сварочным образованием. В сварочном производстве с 2006 года. Специализируется на выполнении ответственных сварочных работ, соблюдении технологий и контроле качества швов.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
                   В 2025 году прошёл обучение в учебном центре «Бизнес-клуб “ТЕРРА”» — некоммерческая организация, объединяющая предпринимателей, желающих менять жизнь и мир вокруг. В Тюмени регулярно повышает квалификацию и следит за современными требованиями к безопасности и качеству сварки.
@@ -172,7 +171,7 @@ const About = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  Argo72 — мастерская точной сварки цветных металлов в Тюмени.{" "}
+                  Аргон-Мастер72 — мастерская точной сварки цветных металлов в Тюмени.{" "}
                   <strong className="text-foreground">19 лет практики (с 2006 года)</strong>, специализация:{" "}
                   <strong className="text-primary">TIG/MIG по алюминию</strong>,{" "}
                   <strong className="text-primary">пайка меди/латуни</strong>,{" "}
@@ -219,8 +218,8 @@ const About = () => {
                   </CardHeader>
                   <CardContent className="space-y-3 text-muted-foreground">
                     <p>
-                      <strong className="text-foreground">Калугин Максим Александрович</strong> и{" "}
-                      <strong className="text-foreground">Кузнецов Максим Владимирович</strong> — высшее сварочное образование +
+                      <strong className="text-foreground">Максим</strong> и{" "}
+                      <strong className="text-foreground">Антон</strong> — высшее сварочное образование +
                       техническое сварочное образование.
                     </p>
                     <p>
@@ -504,7 +503,7 @@ const About = () => {
 
             {/* КОМАНДА */}
             <section className="mb-16">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">Команда Argo72</h2>
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Команда Аргон-Мастер72</h2>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <Card>
@@ -514,7 +513,7 @@ const About = () => {
                         <Users className="h-8 w-8 text-primary-foreground" />
                       </div>
                       <div>
-                        <CardTitle>Максим Кузнецов</CardTitle>
+                        <CardTitle>Максим</CardTitle>
                         <CardDescription>Ведущий сварщик / технолог</CardDescription>
                       </div>
                     </div>
@@ -525,13 +524,13 @@ const About = () => {
                     <p>Организация производства: WPS, маршруты, контроль качества, обучение</p>
                     <div className="pt-4">
                       <a
-                        href="https://t.me/makselyanov"
+                        href="https://t.me/+79326205501"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline flex items-center gap-2"
                       >
                         <Phone className="h-4 w-4" />
-                        +7 905 824-85-64
+                        +7 932 620-55-01
                       </a>
                     </div>
                   </CardContent>
@@ -544,7 +543,7 @@ const About = () => {
                         <Users className="h-8 w-8 text-primary-foreground" />
                       </div>
                       <div>
-                        <CardTitle>Максим Калугин</CardTitle>
+                        <CardTitle>Антон</CardTitle>
                         <CardDescription>Мастер-приёмщик</CardDescription>
                       </div>
                     </div>
@@ -555,64 +554,18 @@ const About = () => {
                     <p>Приём/выдача изделий, фото-отчёты, закрывающие документы</p>
                     <div className="pt-4">
                       <a
-                        href="https://t.me/KaluginMaxim"
+                        href="https://t.me/+79326205502"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline flex items-center gap-2"
                       >
                         <Phone className="h-4 w-4" />
-                        +7 922 267-50-34
+                        +7 932 620-55-02
                       </a>
                     </div>
                   </CardContent>
                 </Card>
               </div>
-            </section>
-
-            {/* ДОКИ */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">Документы и реквизиты</h2>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                        <FileText className="h-5 w-5 text-primary" />
-                        Юридическая информация
-                      </h3>
-                      <div className="space-y-2 text-sm text-muted-foreground">
-                        <p>
-                          <strong className="text-foreground">Наименование:</strong> ООО «АРГО»
-                        </p>
-                        <p>
-                          <strong className="text-foreground">Город:</strong> Тюмень
-                        </p>
-                        <p>
-                          <strong className="text-foreground">ИНН:</strong> 720321829472
-                        </p>
-                        <p>
-                          <strong className="text-foreground">Адрес:</strong> г. Тюмень, ул. Камчатская, 1
-                        </p>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                        <ShieldCheck className="h-5 w-5 text-primary" />
-                        Документооборот
-                      </h3>
-                      <div className="space-y-2 text-sm text-muted-foreground">
-                        <p>• Договор на выполнение работ</p>
-                        <p>• Смета с детализацией</p>
-                        <p>• Акты КС-2/КС-3 (при необходимости)</p>
-                        <p>• ТЗ и WPS-карты</p>
-                        <p>• Протоколы ВИК/ПК</p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </section>
 
             {/* КАК НАЧАТЬ */}

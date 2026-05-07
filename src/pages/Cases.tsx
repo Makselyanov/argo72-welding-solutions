@@ -161,12 +161,12 @@ const Cases = () => {
               Свяжитесь с нами для обсуждения вашего проекта
             </p>
             <a
-              href="https://wa.me/79222675034"
+              href="https://t.me/+79326205501"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 font-medium transition-colors"
             >
-              Написать в WhatsApp
+              Написать в Telegram
             </a>
           </div>
         </main>

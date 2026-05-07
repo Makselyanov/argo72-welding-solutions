@@ -18,8 +18,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { CheckCircle2, AlertTriangle, Send, Phone, Calculator, Award } from "lucide-react";
 
 const CONTACTS = {
-  WHATSAPP: "79222675034",
-  PHONE: "+7 922 267 5034"
+  TELEGRAM: "https://t.me/+79326205501",
+  PHONE: "+7 932 620-55-01"
 };
 
 const SegmentPage = () => {
@@ -78,15 +78,12 @@ const SegmentPage = () => {
     return { min, max };
   };
 
-  const handleWhatsAppCalculator = () => {
-    const { min, max } = calculatePrice();
-    const message = `Здравствуйте! Запрос со страницы ${segment.title}.\n\nРасчёт:\n- Тип работ: ${calcForm.workType}\n- Металл: ${calcForm.metal}\n- Толщина: ${calcForm.thickness}\n- Доступность: ${calcForm.accessibility}\n- Длина/швы: ${calcForm.length} м/п.м\n\nОриентир: ${min.toLocaleString()} – ${max.toLocaleString()} ₽\n\nПрошу уточнить стоимость и сроки.`;
-    window.open(`https://wa.me/${CONTACTS.WHATSAPP}?text=${encodeURIComponent(message)}`, "_blank");
+  const handleTelegramCalculator = () => {
+    window.open(CONTACTS.TELEGRAM, "_blank");
   };
 
-  const handleWhatsAppContact = () => {
-    const message = `Здравствуйте! Заявка со страницы ${segment.title}.\n\nИмя: ${contactForm.name}\nТелефон: ${contactForm.phone}\nМессенджер: ${contactForm.messenger}\nКомментарий: ${contactForm.comment}\n${contactForm.hasPhotos ? "Пришлю фото/видео в мессенджер." : ""}`;
-    window.open(`https://wa.me/${CONTACTS.WHATSAPP}?text=${encodeURIComponent(message)}`, "_blank");
+  const handleTelegramContact = () => {
+    window.open(CONTACTS.TELEGRAM, "_blank");
   };
 
   const price = calculatePrice();
@@ -110,7 +107,7 @@ const SegmentPage = () => {
     "serviceType": segment.title,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Argo72",
+      "name": "Аргон-Мастер72",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Тюмень",
@@ -169,12 +166,12 @@ const SegmentPage = () => {
                     asChild
                   >
                     <a
-                      href={`https://wa.me/${CONTACTS.WHATSAPP}?text=${encodeURIComponent(`Здравствуйте! Вопрос по услугам для ${segment.title}. Ссылка: ${window.location.href}`)}`}
+                      href={CONTACTS.TELEGRAM}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Send className="mr-2 h-5 w-5" />
-                      WhatsApp
+                      Telegram
                     </a>
                   </Button>
                 </div>
@@ -388,9 +385,9 @@ const SegmentPage = () => {
                 )}
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button onClick={handleWhatsAppCalculator} className="flex-1">
+                  <Button onClick={handleTelegramCalculator} className="flex-1">
                     <Send className="mr-2 h-4 w-4" />
-                    Отправить в WhatsApp
+                    Написать в Telegram
                   </Button>
                   <Button
                     variant="outline"
@@ -429,7 +426,7 @@ const SegmentPage = () => {
           {/* Trust Section */}
           <section className="mb-12">
             <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-8">
-              <h2 className="text-2xl font-bold mb-6 text-center">Почему доверяют Argo72</h2>
+              <h2 className="text-2xl font-bold mb-6 text-center">Почему доверяют Аргон-Мастер72</h2>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
                   <Award className="w-12 h-12 mx-auto mb-3 text-primary" />
@@ -499,7 +496,7 @@ const SegmentPage = () => {
                   </div>
 
                   <div className="md:col-span-2">
-                    <label className="text-sm font-medium mb-2 block">WhatsApp / Telegram</label>
+                    <label className="text-sm font-medium mb-2 block">Telegram</label>
                     <Input
                       placeholder="Номер или ник"
                       value={contactForm.messenger}
@@ -531,9 +528,9 @@ const SegmentPage = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button onClick={handleWhatsAppContact} className="flex-1">
+                  <Button onClick={handleTelegramContact} className="flex-1">
                     <Send className="mr-2 h-4 w-4" />
-                    Отправить в WhatsApp
+                    Написать в Telegram
                   </Button>
                   <Button variant="outline" className="flex-1" asChild>
                     <a href={`tel:${CONTACTS.PHONE}`}>
@@ -589,13 +586,9 @@ const SegmentPage = () => {
             size="lg"
             asChild
           >
-            <a
-              href={`https://wa.me/${CONTACTS.WHATSAPP}?text=${encodeURIComponent(`Скинуть фото узла — подскажете бесплатно? Страница: ${segment.title}`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={CONTACTS.TELEGRAM} target="_blank" rel="noopener noreferrer">
               <Send className="mr-2 h-5 w-5" />
-              Скинуть фото узла → подскажем бесплатно
+              Написать в Telegram
             </a>
           </Button>
         </div>

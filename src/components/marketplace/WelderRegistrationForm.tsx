@@ -91,7 +91,7 @@ export const WelderRegistrationForm = ({ open, onClose }: WelderRegistrationForm
         <DialogHeader>
           <DialogTitle>Регистрация сварщика</DialogTitle>
           <DialogDescription>
-            Присоединяйтесь к бирже Argo72 и получайте больше заказов
+            Присоединяйтесь к бирже Аргон-Мастер72 и получайте больше заказов
           </DialogDescription>
         </DialogHeader>
 

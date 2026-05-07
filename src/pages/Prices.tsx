@@ -14,16 +14,16 @@ const Prices = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Цены на сварку цветных металлов Тюмень | Прайс-лист Argo72</title>
+        <title>Цены на сварку цветных металлов Тюмень | Прайс-лист Аргон-Мастер72</title>
         <meta 
           name="description" 
-          content="Прайс на сварку алюминия TIG/MIG, пайку меди и латуни в Тюмени. Онлайн калькулятор стоимости, почасовая оплата, выезд. Цены от 300₽. Argo72" 
+          content="Прайс на сварку алюминия TIG/MIG, пайку меди и латуни в Тюмени. Онлайн калькулятор стоимости, почасовая оплата, выезд. Цены от 300₽. Аргон-Мастер72" 
         />
         <meta 
           name="keywords" 
           content="цены на сварку тюмень, прайс сварка алюминия, стоимость TIG сварки, цена MIG сварка, стоимость пайки меди, сварщик на час цена тюмень, калькулятор стоимости сварки, расценки на аргонную сварку, цена ВИК контроля, стоимость УЗК, сварка нержавейки цена, цена сварки латуни, стоимость выезда сварщика" 
         />
-        <link rel="canonical" href="https://argo72.ru/ceny" />
+        <link rel="canonical" href="https://argo-72.ru/ceny" />
       </Helmet>
 
       <Header />
@@ -225,7 +225,7 @@ const Prices = () => {
               <AccordionItem value="item-4">
                 <AccordionTrigger>Как быстро получить точный расчёт?</AccordionTrigger>
                 <AccordionContent>
-                  Пришлите фото/чертёж в WhatsApp или Telegram, укажите размеры и тип работ. 
+                  Пришлите фото/чертёж в Telegram или Telegram, укажите размеры и тип работ. 
                   В рабочее время мы ответим в течение 30-60 минут. Для сложных проектов можем 
                   выехать на объект для бесплатной оценки.
                 </AccordionContent>
@@ -254,7 +254,7 @@ const Prices = () => {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/30 hover:bg-white/20">
-                <a href="tel:+79222675034">
+                <a href="tel:+79326205501">
                   Позвонить сейчас
                 </a>
               </Button>
@@ -270,7 +270,7 @@ const Prices = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          "name": "Прайс-лист Argo72",
+          "name": "Прайс-лист Аргон-Мастер72",
           "description": "Цены на сварку цветных металлов в Тюмени",
           "itemListElement": pricingData.categories.map((category, index) => ({
             "@type": "ListItem",
@@ -281,7 +281,7 @@ const Prices = () => {
               "description": category.description,
               "provider": {
                 "@type": "LocalBusiness",
-                "name": "Argo72"
+                "name": "Аргон-Мастер72"
               }
             }
           }))
@@ -330,13 +330,13 @@ const Prices = () => {
               "@type": "ListItem",
               "position": 1,
               "name": "Главная",
-              "item": "https://argo72.ru"
+              "item": "https://argo-72.ru"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Цены",
-              "item": "https://argo72.ru/ceny"
+              "item": "https://argo-72.ru/ceny"
             }
           ]
         })}
