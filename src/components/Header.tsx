@@ -26,29 +26,29 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-card shadow-sm">
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+      <div className="w-full px-4 lg:px-9">
+        <div className="flex h-16 items-center gap-5">
           {/* Логотип */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex shrink-0 items-center space-x-3">
             <img
               src={argoLogo}
               alt="Аргон-Мастер72 логотип"
               className="h-12 w-12 object-contain rounded-lg"
             />
             <div className="hidden sm:block">
-              <div className="text-lg font-bold text-foreground">Аргон-Мастер72</div>
+              <div className="text-lg font-bold leading-tight text-foreground">Аргон-Мастер72</div>
               <div className="text-xs text-muted-foreground">Сварочный цех</div>
             </div>
           </Link>
 
           {/* Десктопное меню */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden min-w-0 flex-1 items-center justify-center gap-1 xl:flex">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
                 className={cn(
-                  "px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                  "whitespace-nowrap rounded-md px-2.5 py-2 text-sm font-medium transition-colors",
                   isActive(item.href)
                     ? "bg-primary text-primary-foreground"
                     : "text-foreground hover:bg-muted"
@@ -60,7 +60,7 @@ const Header = () => {
           </nav>
 
           {/* CTA кнопки */}
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="ml-auto hidden shrink-0 items-center space-x-2 md:flex">
             <Button asChild variant="outline" size="sm">
               <a href="#callbackwidget">
                 <Phone className="mr-2 h-4 w-4" />
@@ -78,7 +78,7 @@ const Header = () => {
           {/* Мобильное меню кнопка */}
           <button
             type="button"
-            className="lg:hidden rounded-md p-2 text-foreground hover:bg-muted"
+            className="ml-auto rounded-md p-2 text-foreground hover:bg-muted xl:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Открыть меню"
           >

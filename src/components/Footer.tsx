@@ -160,22 +160,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 rounded-md bg-[#8f1f23] px-5 py-5 text-sm text-white/85">
+        <div className="mt-16 border-t bg-white px-0 pt-8 text-sm text-foreground">
           <p className="mb-4 font-medium">© 2026 Аргон-Мастер72. Все права защищены.</p>
           <div className="flex flex-wrap gap-x-6 gap-y-3 font-medium">
-            <Link to="/privacy" className="hover:text-white transition-colors">
+            <Link to="/privacy" className="text-foreground hover:text-primary transition-colors">
               Политика конфиденциальности
             </Link>
-            <Link to="/privacy" className="hover:text-white transition-colors">
+            <Link to="/privacy" className="text-foreground hover:text-primary transition-colors">
               Cookies
             </Link>
-            <a href={twoGisUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <a href={twoGisUrl} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               Скачать карту компании
             </a>
-            <a href="https://centrlp.ru" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <a href="https://centrlp.ru" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               разработка сайта — centrlp.ru
             </a>
-            <a href="https://svrq.ru" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <a href="https://svrq.ru" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               CRM для сварщика — svrq.ru
             </a>
           </div>
