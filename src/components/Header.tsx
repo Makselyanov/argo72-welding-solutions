@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { MouseEvent, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -8,8 +8,25 @@ import argoLogo from "@/assets/argo-logo.jpg";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isActive = (path: string) => location.pathname === path;
+
+  const goToCalculator = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    setMobileMenuOpen(false);
+
+    if (location.pathname === "/") {
+      window.history.replaceState(null, "", "/#svrq-calculator");
+      document.getElementById("svrq-calculator")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      return;
+    }
+
+    navigate("/#svrq-calculator");
+  };
 
   const navigation = [
     { name: "Услуги", href: "/uslugi" },
@@ -62,13 +79,13 @@ const Header = () => {
           {/* CTA кнопки */}
           <div className="ml-auto hidden shrink-0 items-center space-x-2 md:flex">
             <Button asChild variant="outline" size="sm">
-              <a href="/#svrq-calculator">
+              <a href="/#svrq-calculator" onClick={goToCalculator}>
                 <Phone className="mr-2 h-4 w-4" />
                 Заказать сварщика
               </a>
             </Button>
             <Button asChild size="sm" className="bg-secondary hover:bg-secondary-light">
-              <a href="/#svrq-calculator">
+              <a href="/#svrq-calculator" onClick={goToCalculator}>
                 <Clock className="mr-2 h-4 w-4" />
                 Срочно 24/7
               </a>
@@ -112,13 +129,13 @@ const Header = () => {
             ))}
             <div className="pt-4 space-y-2">
               <Button asChild variant="outline" className="w-full" onClick={() => setMobileMenuOpen(false)}>
-                <a href="/#svrq-calculator">
+                <a href="/#svrq-calculator" onClick={goToCalculator}>
                   <Phone className="mr-2 h-4 w-4" />
                   Заказать сварщика
                 </a>
               </Button>
               <Button asChild className="w-full bg-secondary hover:bg-secondary-light" onClick={() => setMobileMenuOpen(false)}>
-                <a href="/#svrq-calculator">
+                <a href="/#svrq-calculator" onClick={goToCalculator}>
                   <Clock className="mr-2 h-4 w-4" />
                   Срочно 24/7
                 </a>

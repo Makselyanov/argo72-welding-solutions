@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, MouseEvent, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Clock, Shield, Award, Wrench, Calculator, Send } from "lucide-react";
@@ -28,6 +28,28 @@ const Index = () => {
   });
   const [calcStatus, setCalcStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [calcMessage, setCalcMessage] = useState("");
+
+  const scrollToCalculator = (event?: MouseEvent<HTMLAnchorElement>) => {
+    event?.preventDefault();
+    window.history.replaceState(null, "", "/#svrq-calculator");
+    document.getElementById("svrq-calculator")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+  useEffect(() => {
+    if (window.location.hash !== "#svrq-calculator") {
+      return;
+    }
+
+    window.setTimeout(() => {
+      document.getElementById("svrq-calculator")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 50);
+  }, []);
 
   const submitCalc = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -132,13 +154,13 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button asChild size="lg" className="bg-secondary hover:bg-secondary-light shadow-accent">
-                <a href="/#svrq-calculator">
+                <a href="#svrq-calculator" onClick={scrollToCalculator}>
                   Заказать сварщика
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
-                <a href="/#svrq-calculator">
+                <a href="#svrq-calculator" onClick={scrollToCalculator}>
                   Рассчитать стоимость
                 </a>
               </Button>
