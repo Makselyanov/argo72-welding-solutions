@@ -1,12 +1,14 @@
 // C:\argo72\src\components\Layout.tsx
 import React from "react";
 import { Outlet } from "react-router-dom";
+import CookieConsent from "./CookieConsent";
 
 export default function Layout() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* сюда потом вернёшь хедер/футер/меню */}
       <Outlet />
+      <CookieConsent />
     </div>
   );
 }
