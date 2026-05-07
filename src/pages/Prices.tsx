@@ -41,7 +41,7 @@ const Prices = () => {
           {/* Быстрые действия */}
           <div className="flex flex-wrap gap-4 mb-12">
             <Button asChild size="lg">
-              <a href="#callbackwidget">
+              <a href="/#svrq-calculator">
                 <Calculator className="mr-2 h-5 w-5" />
                 Рассчитать стоимость
               </a>
@@ -249,7 +249,7 @@ const Prices = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-secondary hover:bg-secondary-light">
-                <a href="#callbackwidget">
+                <a href="/#svrq-calculator">
                   Получить расчёт
                 </a>
               </Button>

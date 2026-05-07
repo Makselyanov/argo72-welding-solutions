@@ -182,19 +182,19 @@ const About = () => {
 
               <div className="flex flex-wrap gap-3 mt-6">
                 <Button asChild size="lg">
-                  <a href="#callbackwidget">
+                  <a href="/#svrq-calculator">
                     <Camera className="mr-2 h-5 w-5" />
                     Отправить фото детали
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <a href="#callbackwidget">
+                  <a href="/#svrq-calculator">
                     <Calculator className="mr-2 h-5 w-5" />
                     Рассчитать стоимость
                   </a>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <a href="#callbackwidget">
+                  <a href="/#svrq-calculator">
                     <AlertCircle className="mr-2 h-5 w-5" />
                     Срочный вызов 24/7
                   </a>
@@ -612,19 +612,19 @@ const About = () => {
 
               <div className="flex flex-wrap gap-3 justify-center">
                 <Button asChild size="lg">
-                  <a href="#callbackwidget">
+                  <a href="/#svrq-calculator">
                     <Camera className="mr-2 h-5 w-5" />
                     Отправить фото детали
                   </a>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <a href="#callbackwidget">
+                  <a href="/#svrq-calculator">
                     <Clock className="mr-2 h-5 w-5" />
                     Срочный вызов 24/7
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <a href="#callbackwidget">
+                  <a href="/#svrq-calculator">
                     <Calculator className="mr-2 h-5 w-5" />
                     Рассчитать стоимость
                   </a>

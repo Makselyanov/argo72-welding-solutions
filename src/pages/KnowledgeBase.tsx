@@ -216,7 +216,7 @@ const KnowledgeBase = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild>
-                <a href="#callbackwidget">Оставить заявку</a>
+                <a href="/#svrq-calculator">Оставить заявку</a>
               </Button>
               <Button variant="outline" asChild>
                 <a href="https://t.me/+79326205501" target="_blank" rel="noopener noreferrer">

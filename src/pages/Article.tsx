@@ -123,7 +123,7 @@ const Article = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild>
-                  <a href="#callbackwidget">Отправить фото детали</a>
+                  <a href="/#svrq-calculator">Отправить фото детали</a>
                 </Button>
                 <Button variant="outline" asChild>
                   <a href="https://t.me/+79326205501" target="_blank" rel="noopener noreferrer">

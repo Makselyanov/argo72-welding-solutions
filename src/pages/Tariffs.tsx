@@ -78,7 +78,7 @@ const Tariffs = () => {
                               Подробнее
                             </Link>
                           ) : (
-                            <a href="#callbackwidget">
+                            <a href="/#svrq-calculator">
                               Заказать
                             </a>
                           )}
@@ -126,7 +126,7 @@ const Tariffs = () => {
                           ))}
                         </ul>
                         <Button asChild className="w-full" variant={index === 1 ? "default" : "outline"}>
-                          <a href="#callbackwidget">
+                          <a href="/#svrq-calculator">
                             Выбрать пакет
                           </a>
                         </Button>
@@ -170,7 +170,7 @@ const Tariffs = () => {
                           ))}
                         </ul>
                         <Button asChild className="w-full" variant={index === 1 ? "default" : "outline"}>
-                          <a href="#callbackwidget">
+                          <a href="/#svrq-calculator">
                             Выбрать пакет
                           </a>
                         </Button>
@@ -188,7 +188,7 @@ const Tariffs = () => {
                 Мы составим индивидуальное предложение под ваши задачи
               </p>
               <Button asChild size="lg" className="bg-secondary hover:bg-secondary-light">
-                <a href="#callbackwidget">
+                <a href="/#svrq-calculator">
                   Получить консультацию
                 </a>
               </Button>

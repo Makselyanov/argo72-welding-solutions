@@ -62,13 +62,13 @@ const Header = () => {
           {/* CTA кнопки */}
           <div className="ml-auto hidden shrink-0 items-center space-x-2 md:flex">
             <Button asChild variant="outline" size="sm">
-              <a href="#callbackwidget">
+              <a href="/#svrq-calculator">
                 <Phone className="mr-2 h-4 w-4" />
                 Заказать сварщика
               </a>
             </Button>
             <Button asChild size="sm" className="bg-secondary hover:bg-secondary-light">
-              <a href="#callbackwidget">
+              <a href="/#svrq-calculator">
                 <Clock className="mr-2 h-4 w-4" />
                 Срочно 24/7
               </a>
@@ -112,13 +112,13 @@ const Header = () => {
             ))}
             <div className="pt-4 space-y-2">
               <Button asChild variant="outline" className="w-full" onClick={() => setMobileMenuOpen(false)}>
-                <a href="#callbackwidget">
+                <a href="/#svrq-calculator">
                   <Phone className="mr-2 h-4 w-4" />
                   Заказать сварщика
                 </a>
               </Button>
               <Button asChild className="w-full bg-secondary hover:bg-secondary-light" onClick={() => setMobileMenuOpen(false)}>
-                <a href="#callbackwidget">
+                <a href="/#svrq-calculator">
                   <Clock className="mr-2 h-4 w-4" />
                   Срочно 24/7
                 </a>
