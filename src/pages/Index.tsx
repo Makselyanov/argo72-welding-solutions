@@ -9,7 +9,8 @@ import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import servicesData from "@/data/services.json";
 
-const SVRQ_LEAD_URL = "https://svrq.ru/api/public/argon-master72/leads";
+const SVRQ_LEAD_URL =
+  import.meta.env.VITE_SVRQ_LEAD_URL || "https://svrq.ru/api/public/argon-master72/leads";
 
 const Index = () => {
   const featuredServices = servicesData.categories.slice(0, 2).flatMap(cat => 
@@ -24,7 +25,7 @@ const Index = () => {
     thickness: "t4_6",
     seamLength: "",
     urgency: "normal",
-    privacyAccepted: true,
+    privacyAccepted: false,
   });
   const [calcStatus, setCalcStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [calcMessage, setCalcMessage] = useState("");
@@ -97,7 +98,7 @@ const Index = () => {
     try {
       const response = await fetch(SVRQ_LEAD_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
       const data = await response.json().catch(() => ({}));
@@ -270,7 +271,12 @@ const Index = () => {
                   checked={calcForm.privacyAccepted}
                   onChange={(e) => setCalcForm({ ...calcForm, privacyAccepted: e.target.checked })}
                 />
-                Согласен на обработку персональных данных для расчёта и связи по заявке
+                <span>
+                  Согласен на обработку персональных данных для расчёта и связи по заявке согласно{" "}
+                  <a className="underline hover:text-foreground" href="/privacy" target="_blank" rel="noopener">
+                    политике сайта
+                  </a>
+                </span>
               </label>
 
               <Button type="submit" size="lg" className="w-full bg-secondary hover:bg-secondary-light" disabled={calcStatus === "loading"}>
