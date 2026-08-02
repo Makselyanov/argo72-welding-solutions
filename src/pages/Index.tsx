@@ -10,7 +10,7 @@ import ServiceCard from "@/components/ServiceCard";
 import servicesData from "@/data/services.json";
 
 const SVRQ_LEAD_URL =
-  import.meta.env.VITE_SVRQ_LEAD_URL || "https://svrq.ru/api/public/argon-master72/leads";
+  import.meta.env.VITE_SVRQ_LEAD_URL || "/api/svrq-lead.php";
 
 const Index = () => {
   const featuredServices = servicesData.categories.slice(0, 2).flatMap(cat => 
@@ -273,9 +273,9 @@ const Index = () => {
                 />
                 <span>
                   Согласен на обработку персональных данных для расчёта и связи по заявке согласно{" "}
-                  <a className="underline hover:text-foreground" href="/privacy" target="_blank" rel="noopener">
-                    политике сайта
-                  </a>
+                  <a className="underline hover:text-foreground" href="/consent" target="_blank" rel="noopener">согласию</a>
+                  {" "}и ознакомлен с{" "}
+                  <a className="underline hover:text-foreground" href="/privacy" target="_blank" rel="noopener">политикой сайта</a>
                 </span>
               </label>
 

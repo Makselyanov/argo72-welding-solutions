@@ -10,6 +10,7 @@ import Tariffs from './pages/Tariffs';
 import Article from './pages/Article';
 import Contacts from './pages/Contacts';
 import Privacy from './pages/Privacy';
+import PersonalDataConsent from './pages/PersonalDataConsent';
 import NotFound from './pages/NotFound';
 import KnowledgeBase from './pages/KnowledgeBase';
 import Marketplace from './pages/Marketplace';
@@ -59,6 +60,7 @@ function App() {
         {/* Other */}
         <Route path="kontakty" element={<Contacts />} />
         <Route path="privacy" element={<Privacy />} />
+        <Route path="consent" element={<PersonalDataConsent />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

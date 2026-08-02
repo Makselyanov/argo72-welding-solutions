@@ -166,8 +166,8 @@ const Footer = () => {
             <Link to="/privacy" className="text-foreground hover:text-primary transition-colors">
               Политика конфиденциальности
             </Link>
-            <Link to="/privacy" className="text-foreground hover:text-primary transition-colors">
-              Cookies
+            <Link to="/consent" className="text-foreground hover:text-primary transition-colors">
+              Согласие на обработку данных
             </Link>
             <a href={twoGisUrl} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               Скачать карту компании
