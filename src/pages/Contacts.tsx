@@ -14,7 +14,7 @@ const Contacts = () => {
         <Helmet>
           <title>Контакты Аргон-Мастер72 — сварочный цех в Тюмени</title>
           <meta name="description" content="Контакты Аргон-Мастер72: телефоны, адрес, режим работы. Срочный выезд 24/7, выездные услуги и инженерная поддержка по сварке." />
-          <link rel="canonical" href="https://argo-72.ru/kontakty" />
+          <link rel="canonical" href="https://argon-master72.ru/kontakty" />
         </Helmet>
         <div className="container mx-auto px-4 py-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Контакты</h1>
@@ -70,7 +70,7 @@ const Contacts = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Email</h3>
-                    <a href="mailto:info@argo-72.ru" className="text-gray-600 hover:text-blue-600 transition-colors">info@argo-72.ru</a>
+                    <a href="mailto:info@argon-master72.ru" className="text-gray-600 hover:text-blue-600 transition-colors">info@argon-master72.ru</a>
                   </div>
                 </div>
 

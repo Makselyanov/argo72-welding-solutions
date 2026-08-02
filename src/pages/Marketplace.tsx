@@ -56,7 +56,7 @@ const Marketplace = () => {
           name="keywords"
           content="биржа сварщиков, найти сварщика, сварочные работы, сварщик на час, аргонодуговая сварка, TIG сварка"
         />
-        <link rel="canonical" href="https://argo-72.ru/marketplace" />
+        <link rel="canonical" href="https://argon-master72.ru/marketplace" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

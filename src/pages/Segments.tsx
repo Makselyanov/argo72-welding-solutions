@@ -21,7 +21,7 @@ const Segments = () => {
           name="keywords" 
           content="сварка для ТСЖ тюмень, сварка для управляющих компаний, сварка на стройке, сварка для HVAC, ремонт холодильного оборудования, сварка алюминия автосервис, ремонт лодок тюмень, сварка для производства, аутсорс сварщика для бизнеса, ремонт агротехники, сварка спецтехники" 
         />
-        <link rel="canonical" href="https://argo-72.ru/dlya-kogo" />
+        <link rel="canonical" href="https://argon-master72.ru/dlya-kogo" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

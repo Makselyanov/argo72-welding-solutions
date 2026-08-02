@@ -25,11 +25,11 @@ const About = () => {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://argo-72.ru/#organization",
+        "@id": "https://argon-master72.ru/#organization",
         "name": "Аргон-Мастер72",
         "legalName": "Аргон-Мастер72",
         "description": "Сварочный цех: TIG/MIG алюминий, пайка меди/латуни, выезд 24/7, ВИК/ПК, разработка ТЗ/WPS",
-        "url": "https://argo-72.ru",
+        "url": "https://argon-master72.ru",
         "telephone": ["+79326205501", "+79326205502"],
         "address": {
           "@type": "PostalAddress",
@@ -53,11 +53,11 @@ const About = () => {
       },
       {
         "@type": "Organization",
-        "@id": "https://argo-72.ru/#organization",
+        "@id": "https://argon-master72.ru/#organization",
         "name": "Аргон-Мастер72",
         "legalName": "Аргон-Мастер72",
-        "url": "https://argo-72.ru",
-        "logo": "https://argo-72.ru/logo.png",
+        "url": "https://argon-master72.ru",
+        "logo": "https://argon-master72.ru/logo.png",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+79326205501",
@@ -73,13 +73,13 @@ const About = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Главная",
-            "item": "https://argo-72.ru/"
+            "item": "https://argon-master72.ru/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "О нас",
-            "item": "https://argo-72.ru/o-nas"
+            "item": "https://argon-master72.ru/o-nas"
           }
         ]
       },
@@ -135,11 +135,11 @@ const About = () => {
           name="keywords"
           content="сварочный цех, TIG алюминий Тюмень, пайка меди, сварщик на час, ВИК контроль, капиллярный контроль, разработка ТЗ, WPS, выездной сварщик"
         />
-        <link rel="canonical" href="https://argo-72.ru/o-nas" />
+        <link rel="canonical" href="https://argon-master72.ru/o-nas" />
 
         <meta property="og:title" content="О нас Аргон-Мастер72 — сварка алюминия TIG/MIG, пайка меди/латуни, Тюмень" />
         <meta property="og:description" content="19 лет опыта в сварке цветных металлов. TIG/MIG алюминий, пайка меди, выезд 24/7, контроль качества." />
-        <meta property="og:url" content="https://argo-72.ru/o-kompanii" />
+        <meta property="og:url" content="https://argon-master72.ru/o-kompanii" />
         <meta property="og:type" content="website" />
 
         <script type="application/ld+json">

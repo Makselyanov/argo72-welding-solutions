@@ -129,7 +129,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка для ТСЖ и ЖСК Тюмень — ремонт стояков, перил, козырьков | Аргон-Мастер72",
       description: "Аварийный ремонт стояков ХВС/ГВС, сварка перил и козырьков для ТСЖ. Документы, фотоотчёт, гарантия. Опыт с 2006 года. Выезд 24/7 по Тюмени.",
-      canonical: "https://argo-72.ru/komu/tszh"
+      canonical: "https://argon-master72.ru/komu/tszh"
     }
   },
   {
@@ -243,7 +243,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка для УК Тюмень — ремонт систем ЖКХ, плановые и аварийные работы | Аргон-Мастер72",
       description: "Сварочные работы для управляющих компаний: стояки, отопление, металлоконструкции. Документы, отчётность, гарантия. Абонентское обслуживание. 19 лет опыта.",
-      canonical: "https://argo-72.ru/komu/uk"
+      canonical: "https://argon-master72.ru/komu/uk"
     }
   },
   {
@@ -357,7 +357,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка для строителей и девелоперов Тюмень — металлоконструкции, ТЗ, WPS | Аргон-Мастер72",
       description: "Сварочные работы на строительных объектах: каркасы, коммуникации, фасады. ТЗ, WPS, НК, документация для сдачи. Опыт с 2006 года. Тюмень.",
-      canonical: "https://argo-72.ru/komu/dev"
+      canonical: "https://argon-master72.ru/komu/dev"
     }
   },
   {
@@ -471,7 +471,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Пайка и сварка для HVAC Тюмень — медь, алюминий, холодильное оборудование | Аргон-Мастер72",
       description: "Пайка медных контуров, сварка алюминиевых теплообменников, ремонт чиллеров и кондиционеров. Опрессовка, вакуумирование, гарантия. 19 лет опыта.",
-      canonical: "https://argo-72.ru/komu/hvac"
+      canonical: "https://argon-master72.ru/komu/hvac"
     }
   },
   {
@@ -585,7 +585,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка для автосервисов Тюмень — алюминий, нержавейка, картеры, радиаторы | Аргон-Мастер72",
       description: "Аргонная сварка алюминиевых картеров, радиаторов, выхлопов из нержавейки. TIG-сварка без деформаций. Опрессовка, гарантия. 19 лет опыта. Тюмень.",
-      canonical: "https://argo-72.ru/komu/auto"
+      canonical: "https://argon-master72.ru/komu/auto"
     }
   },
   {
@@ -699,7 +699,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка алюминиевых лодок Тюмень — ремонт корпусов, транцев, опрессовка | Аргон-Мастер72",
       description: "Аргонная сварка алюминиевых лодок: трещины, пробоины, усиление транца. Опрессовка, анодирование. TIG AC, 19 лет опыта. Тюмень и область.",
-      canonical: "https://argo-72.ru/komu/boats"
+      canonical: "https://argon-master72.ru/komu/boats"
     }
   },
   {
@@ -813,7 +813,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка для HoReCa и ритейла Тюмень — столы, стеллажи, витрины из нержавейки | Аргон-Мастер72",
       description: "Изготовление кухонного оборудования из нержавейки: столы, стеллажи, витрины. TIG-сварка, полировка, сертификаты. 19 лет опыта. Тюмень.",
-      canonical: "https://argo-72.ru/komu/retail"
+      canonical: "https://argon-master72.ru/komu/retail"
     }
   },
   {
@@ -927,7 +927,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка стеллажей для складов Тюмень — паллетные, полочные, расчёт нагрузок | Аргон-Мастер72",
       description: "Изготовление складских стеллажей и рам: паллетные, полочные, мезонины. Расчёт нагрузок, ТЗ, монтаж. 19 лет опыта. Тюмень и область.",
-      canonical: "https://argo-72.ru/komu/warehouses"
+      canonical: "https://argon-master72.ru/komu/warehouses"
     }
   },
   {
@@ -1041,7 +1041,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Аутсорс-сварка для производства Тюмень — сварщик на час, ТЗ, WPS, НК | Аргон-Мастер72",
       description: "Сварочные работы для МСП без найма штатного сварщика: серийная сварка, ремонт оборудования, ТЗ, WPS, контроль качества. 19 лет опыта. Тюмень.",
-      canonical: "https://argo-72.ru/komu/manufacturing"
+      canonical: "https://argon-master72.ru/komu/manufacturing"
     }
   },
   {
@@ -1155,7 +1155,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка для электромонтажа Тюмень — пайка шин, заземление, щиты | Аргон-Мастер72",
       description: "Пайка медных шин, сварка заземляющих контуров, монтаж щитового оборудования. Протоколы НК, измерения. 19 лет опыта. Тюмень.",
-      canonical: "https://argo-72.ru/komu/electro"
+      canonical: "https://argon-master72.ru/komu/electro"
     }
   },
   {
@@ -1269,7 +1269,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка для госучреждений Тюмень — 44-ФЗ, 223-ФЗ, акты КС-2/КС-3 | Аргон-Мастер72",
       description: "Сварочные работы по госконтрактам: ремонт систем, металлоконструкции, аварийные работы. Сметы ФЕР/ТЕР, документы, гарантия. 19 лет опыта. Тюмень.",
-      canonical: "https://argo-72.ru/komu/public"
+      canonical: "https://argon-master72.ru/komu/public"
     }
   },
   {
@@ -1383,7 +1383,7 @@ export const segments: Segment[] = [
     seo: {
       title: "Сварка агротехники и спецтехники Тюмень — выезд на поле, ремонт рам, ковшей | Аргон-Мастер72",
       description: "Выездной ремонт и сварка сельхозтехники: рамы, ковши, гидроцилиндры, наплавка. Работаем на полях 24/7 в сезон. 19 лет опыта. Тюменская область.",
-      canonical: "https://argo-72.ru/komu/agro"
+      canonical: "https://argon-master72.ru/komu/agro"
     }
   }
 ];

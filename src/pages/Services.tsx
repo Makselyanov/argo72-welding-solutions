@@ -19,7 +19,7 @@ const Services = () => {
           name="keywords" 
           content="услуги сварки тюмень, TIG сварка алюминия, MIG сварка нержавейки, пайка меди тюмень, сварка латуни, сварка титана, аргонная сварочный цех, ВИК контроль сварных швов, УЗК контроль, капиллярный контроль, выездная сварка, ремонт радиаторов, ремонт теплообменников" 
         />
-        <link rel="canonical" href="https://argo-72.ru/uslugi" />
+        <link rel="canonical" href="https://argon-master72.ru/uslugi" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

@@ -128,7 +128,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Аргонодуговая сварка алюминия TIG в Тюмени | Аргон-Мастер72",
       description: "Сварка алюминия TIG (AC/DC) от 800 ₽. Лодки, радиаторы, рамы, баки — герметичные швы на АД31, АМг, АМц. Выезд, ВИК, гарантия 12 мес. Опыт с 2006 г.",
       keywords: "сварка алюминия тюмень, аргонодуговая сварка алюминия, TIG AC DC, сварка лодок алюминий, ремонт радиатора алюминий, АМг АД31 сварка",
-      canonical: "https://argo-72.ru/uslugi/alyuminiy-tig",
+      canonical: "https://argon-master72.ru/uslugi/alyuminiy-tig",
     },
   },
   {
@@ -230,7 +230,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Полуавтоматическая сварка алюминия MIG в Тюмени | Аргон-Мастер72",
       description: "Сварка алюминия MIG от 600 ₽. Серийное производство, рамы, профиль 3–25 мм. Импульсный режим, без брызг и пор. Скидки на объём. Опыт с 2006 г.",
       keywords: "MIG сварка алюминия тюмень, полуавтомат алюминий, импульсная сварка MIG, серийная сварка алюминия, сварка рам алюминий",
-      canonical: "https://argo-72.ru/uslugi/alyuminiy-mig",
+      canonical: "https://argon-master72.ru/uslugi/alyuminiy-mig",
     },
   },
   {
@@ -333,7 +333,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Пайка меди и латуни в Тюмени | Медно-фосфорные и серебряные припои | Аргон-Мастер72",
       description: "Пайка медных труб HVAC, теплообменников, электрошин от 300 ₽. Продувка азотом, опрессовка, герметичность гарантирована. Серебряные припои ПСр-15/25/45. Опыт с 2006 г.",
       keywords: "пайка меди тюмень, пайка медных труб, HVAC пайка кондиционер, серебряный припой, пайка латуни, медно-фосфорный припой",
-      canonical: "https://argo-72.ru/uslugi/med-latun-payka",
+      canonical: "https://argon-master72.ru/uslugi/med-latun-payka",
     },
   },
   {
@@ -436,7 +436,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Сварка нержавеющей стали TIG и MIG в Тюмени | AISI 304, 316L | Аргон-Мастер72",
       description: "Сварка нержавейки от 900 ₽. Пищевое оборудование, трубопроводы, декор. TIG/MIG, backing gas, пассивация, ВИК. Гарантия на коррозионную стойкость 12 мес. Опыт с 2006 г.",
       keywords: "сварка нержавейки тюмень, TIG нержавеющая сталь, пищевое оборудование сварка, AISI 304 316L, backing gas, пассивация нержавейки",
-      canonical: "https://argo-72.ru/uslugi/nerzh",
+      canonical: "https://argon-master72.ru/uslugi/nerzh",
     },
   },
   {
@@ -482,7 +482,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Визуально-измерительный контроль сварных швов (ВИК) в Тюмени | Аргон-Мастер72",
       description: "Проведение ВИК швов: фото/протокол, измерения, рекомендации. Быстрая проверка на месте — фиксация дефектов и способы их устранения.",
       keywords: "ВИК, визуально-измерительный контроль, проверка швов Тюмень, протокол ВИК",
-      canonical: "https://argo-72.ru/uslugi/nk-vik",
+      canonical: "https://argon-master72.ru/uslugi/nk-vik",
     },
   },
   {
@@ -527,7 +527,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Капиллярный контроль сварных швов и соединений в Тюмени | Аргон-Мастер72",
       description: "Капиллярный контроль для выявления микротрещин и дефектов поверхности. Протокол, фото и рекомендации по ремонту.",
       keywords: "капиллярный контроль, проникающая дефектоскопия, контроль швов Тюмень, NDT капиллярный",
-      canonical: "https://argo-72.ru/uslugi/nk-kapillyarnyy",
+      canonical: "https://argon-master72.ru/uslugi/nk-kapillyarnyy",
     },
   },
   {
@@ -572,7 +572,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Ультразвуковой контроль сварных швов (УЗК) в Тюмени | Аргон-Мастер72",
       description: "УЗК и толщинометрия от партнёра: глубинная дефектоскопия, отчёт и карта дефектов для сдачи в надзорные органы.",
       keywords: "УЗК, ультразвуковой контроль, толщинометрия, дефектоскопия Тюмень",
-      canonical: "https://argo-72.ru/uslugi/nk-uzk",
+      canonical: "https://argon-master72.ru/uslugi/nk-uzk",
     },
   },
   {
@@ -617,7 +617,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Фото и видео отчёт сварочных работ и ремонта в Тюмени | Аргон-Мастер72",
       description: "Фото/видео отчёт работ: поэтапная съёмка, таймштамп, PDF-репорт для сдачи работ и приемки",
       keywords: "фото отчёт сварка, видео отчёт сварка, фото отчет ремонт, документирование работ",
-      canonical: "https://argo-72.ru/uslugi/nk-photo-report",
+      canonical: "https://argon-master72.ru/uslugi/nk-photo-report",
     },
   },
   {
@@ -662,7 +662,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Составление ТЗ на сварку и дефектовка оборудования в Тюмени | Аргон-Мастер72",
       description: "Составим ТЗ, дефектовку и смету для ремонта и сварки. Чёткое ТЗ экономит время и деньги — выезд инженера, отчёт и рекомендации.",
       keywords: "составление ТЗ сварка, дефектовка, техническое задание, инженерная служба Тюмень",
-      canonical: "https://argo-72.ru/uslugi/inzhiniring-tz",
+      canonical: "https://argon-master72.ru/uslugi/inzhiniring-tz",
     },
   },
   {
@@ -706,7 +706,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Разработка WPS и технологических карт сварки в Тюмени | Аргон-Мастер72",
       description: "Разработка WPS и техкарт, тестовые образцы, протоколы. Документация для производства и приемки. Опыт разработки под разные материалы.",
       keywords: "WPS, технологические карты, техкарты сварка, WPS разработка Тюмень",
-      canonical: "https://argo-72.ru/uslugi/inzhiniring-wps",
+      canonical: "https://argon-master72.ru/uslugi/inzhiniring-wps",
     },
   },
   {
@@ -747,7 +747,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Подготовка кромок под сварку в Тюмени: фрезеровка, резка | Аргон-Мастер72",
       description: "Подготовка кромок: резка, фрезеровка, зачистка. Обеспечиваем точную геометрию шва и минимизацию дефектов.",
       keywords: "подготовка кромок, фрезеровка кромок, резка кромок, подготовка кромок сварка",
-      canonical: "https://argo-72.ru/uslugi/inzhiniring-podgotovka-kromok",
+      canonical: "https://argon-master72.ru/uslugi/inzhiniring-podgotovka-kromok",
     },
   },
   {
@@ -788,7 +788,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Финишная обработка сварных швов в Тюмени: полировка, пескоструй | Аргон-Мастер72",
       description: "Финишная обработка швов: полировка, шлифовка, пескоструй (партнёры). Готовность для покраски и эстетической передачи изделия.",
       keywords: "финишная обработка швов, полировка швов, пескоструй обработка, шлифовка швов",
-      canonical: "https://argo-72.ru/uslugi/inzhiniring-finish",
+      canonical: "https://argon-master72.ru/uslugi/inzhiniring-finish",
     },
   },
   {
@@ -843,7 +843,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Сварщик на час в Тюмени | Почасовая аренда сварщика | Аргон-Мастер72",
       description: "Сварщик на час от 2000 ₽. TIG, MIG, ММА сварка. Выезд с оборудованием, аттестация НАКС.",
       keywords: "сварщик на час тюмень, аренда сварщика, почасовая сварка",
-      canonical: "https://argo-72.ru/uslugi/svarshchik-na-chas",
+      canonical: "https://argon-master72.ru/uslugi/svarshchik-na-chas",
     },
   },
   {
@@ -889,7 +889,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Мобильная сварочная бригада в Тюмени | Аргон-Мастер72",
       description: "Выездная бригада сварщиков от 18000 ₽/смена. Монтаж металлоконструкций, вахта.",
       keywords: "мобильная бригада сварщиков, выездная бригада тюмень",
-      canonical: "https://argo-72.ru/uslugi/mobilnaya-brigada",
+      canonical: "https://argon-master72.ru/uslugi/mobilnaya-brigada",
     },
   },
   {
@@ -935,7 +935,7 @@ export const servicesDetailed: ServiceDetailed[] = [
       title: "Срочный вызов сварщика 24/7 в Тюмени | Аргон-Мастер72",
       description: "Срочный вызов от 5000 ₽. Выезд 1-2 часа, круглосуточно.",
       keywords: "срочный вызов сварщика, сварка 24/7, аварийная сварка",
-      canonical: "https://argo-72.ru/uslugi/srochno-24-7",
+      canonical: "https://argon-master72.ru/uslugi/srochno-24-7",
     },
   },
 ];

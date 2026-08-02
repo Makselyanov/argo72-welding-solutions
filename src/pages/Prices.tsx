@@ -23,7 +23,7 @@ const Prices = () => {
           name="keywords" 
           content="цены на сварку тюмень, прайс сварка алюминия, стоимость TIG сварки, цена MIG сварка, стоимость пайки меди, сварщик на час цена тюмень, калькулятор стоимости сварки, расценки на аргонную сварку, цена ВИК контроля, стоимость УЗК, сварка нержавейки цена, цена сварки латуни, стоимость выезда сварщика" 
         />
-        <link rel="canonical" href="https://argo-72.ru/ceny" />
+        <link rel="canonical" href="https://argon-master72.ru/ceny" />
       </Helmet>
 
       <Header />
@@ -330,13 +330,13 @@ const Prices = () => {
               "@type": "ListItem",
               "position": 1,
               "name": "Главная",
-              "item": "https://argo-72.ru"
+              "item": "https://argon-master72.ru"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Цены",
-              "item": "https://argo-72.ru/ceny"
+              "item": "https://argon-master72.ru/ceny"
             }
           ]
         })}

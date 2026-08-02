@@ -83,7 +83,7 @@ const Index = () => {
       client_phone: calcForm.clientPhone.trim(),
       client_comment: [
         calcForm.clientComment.trim(),
-        "Источник: форма расчёта на argo-72.ru",
+        "Источник: форма расчёта на argon-master72.ru",
       ].filter(Boolean).join("\n\n"),
       privacy_accepted: true,
     };
@@ -134,7 +134,7 @@ const Index = () => {
           name="keywords" 
           content="сварка тюмень, аргонная сварка тюмень, сварочный цех, TIG сварка алюминия, MIG сварка, сварка нержавейки, сварка меди, пайка латуни, сварка титана, ВИК контроль, УЗК, неразрушающий контроль, сварщик на час тюмень, аутсорс сварщика, ремонт труб, ремонт балконов, монтаж металлоконструкций, аварийная сварка 24/7" 
         />
-        <link rel="canonical" href="https://argo-72.ru/" />
+        <link rel="canonical" href="https://argon-master72.ru/" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col">

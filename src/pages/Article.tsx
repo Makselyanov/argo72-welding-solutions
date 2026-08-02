@@ -31,7 +31,7 @@ const Article = () => {
       "name": "Аргон-Мастер72",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://argo-72.ru/logo.jpg"
+        "url": "https://argon-master72.ru/logo.jpg"
       }
     },
     "datePublished": "2025-01-01",

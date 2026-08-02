@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-const CONSENT_KEY = "argo72_cookie_consent";
-const METRIKA_ID = 109100076;
+const CONSENT_KEY = "argon_master72_cookie_consent";
+const METRIKA_ID = Number(import.meta.env.VITE_YANDEX_METRIKA_ID || 0);
 
 declare global {
   interface Window {
@@ -15,6 +15,7 @@ declare global {
 
 const initMetrika = () => {
   if (typeof window === "undefined") return;
+  if (!METRIKA_ID) return;
 
   window.dataLayer = window.dataLayer || [];
   window.ym = window.ym || function ymFallback(...args: unknown[]) {
@@ -58,7 +59,7 @@ const CookieConsent = () => {
   }, [accepted]);
 
   useEffect(() => {
-    if (accepted && window.ym && window.__argoMetrikaInitialized) {
+    if (accepted && METRIKA_ID && window.ym && window.__argoMetrikaInitialized) {
       window.ym(METRIKA_ID, "hit", window.location.href, {
         referrer: document.referrer,
         title: document.title,

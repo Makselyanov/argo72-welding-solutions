@@ -22,7 +22,7 @@ const Tariffs = () => {
           name="keywords"
           content="тарифы на сварку тюмень, сварщик на час цена, аутсорс сварщика, абонемент сварщика для ТСЖ, обслуживание управляющих компаний, срочная сварка 24/7, выезд сварщика тюмень, цены на аргонную сварку, стоимость сварки алюминия"
         />
-        <link rel="canonical" href="https://argo-72.ru/tarify" />
+        <link rel="canonical" href="https://argon-master72.ru/tarify" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

@@ -20,7 +20,7 @@ const Cases = () => {
           name="keywords"
           content="кейсы сварка тюмень, примеры сварочных работ, портфолио сварщика, проекты аргонодуговой сварки, металлоконструкции кейсы, ремонт оборудования примеры"
         />
-        <link rel="canonical" href="https://argo-72.ru/kejsy" />
+        <link rel="canonical" href="https://argon-master72.ru/kejsy" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
